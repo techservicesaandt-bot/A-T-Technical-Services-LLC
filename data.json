@@ -1,0 +1,625 @@
+﻿{
+    "events":  {
+                   "title":  "Events",
+                   "tagline":  "Environments That Move People",
+                   "description":  "From corporate galas to large-scale product launches, A\u0026T designs and delivers complete event environments with precision and creative force — every detail controlled in-house.",
+                   "icon":  "fa-calendar-star",
+                   "projects":  [
+                                    {
+                                        "id":  "ev1",
+                                        "title":  "Global Brand Summit",
+                                        "category":  "Corporate Event",
+                                        "year":  "2024",
+                                        "location":  "Dubai World Trade Centre",
+                                        "description":  "A full-scale corporate summit environment for a Fortune 500 client. Custom-built stage, branded environments, large-format graphics and on-site execution for 3,000 attendees.",
+                                        "thumbnail":  "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=85",
+                                        "gallery":  [
+                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=85",
+                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                    ]
+                                    },
+                                    {
+                                        "id":  "ev2",
+                                        "title":  "Tech Activation – GITEX 2024",
+                                        "category":  "Activation",
+                                        "year":  "2024",
+                                        "location":  "Dubai, UAE",
+                                        "description":  "Interactive brand activation spanning 800sqm with immersive LED zones, custom furniture pods and full branding production.",
+                                        "thumbnail":  "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1400\u0026q=85",
+                                        "gallery":  [
+                                                        "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1400\u0026q=85",
+                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                    ]
+                                    },
+                                    {
+                                        "id":  "ev3",
+                                        "title":  "Awards Gala – Hospitality Sector",
+                                        "category":  "Gala Event",
+                                        "year":  "2024",
+                                        "location":  "Atlantis The Palm, Dubai",
+                                        "description":  "Premium awards night environment including stage design, branded backdrops, tabletop branding and full event infrastructure for 600 guests.",
+                                        "thumbnail":  "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=85",
+                                        "gallery":  [
+                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=85",
+                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                    ]
+                                    },
+                                    {
+                                        "id":  "ev4",
+                                        "title":  "Annual Product Launch",
+                                        "category":  "Product Launch",
+                                        "year":  "2023",
+                                        "location":  "Abu Dhabi, UAE",
+                                        "description":  "End-to-end product reveal environment including custom reveal structure, lighting concept, branded collateral and logistics management.",
+                                        "thumbnail":  "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=85",
+                                        "gallery":  [
+                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=85",
+                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                    ]
+                                    },
+                                    {
+                                        "id":  "ev5",
+                                        "title":  "Government Forum Setup",
+                                        "category":  "Forum",
+                                        "year":  "2023",
+                                        "location":  "Dubai, UAE",
+                                        "description":  "Complete forum infrastructure including 12 branded seminar booths, signage systems, large-format printing and branded F\u0026B station.",
+                                        "thumbnail":  "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=85",
+                                        "gallery":  [
+                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=85",
+                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                    ]
+                                    }
+                                ]
+               },
+    "exhibitions":  {
+                        "title":  "Exhibitions",
+                        "tagline":  "Stands That Define Your Brand",
+                        "description":  "World-class exhibition stands crafted for maximum brand presence globally. From concept sketches and 3D visualization to fabrication, logistics and on-site installation.",
+                        "icon":  "fa-building-columns",
+                        "projects":  [
+                                         {
+                                             "id":  "ex1",
+                                             "title":  "European Auto Expo Stand",
+                                             "category":  "Exhibition Stand",
+                                             "year":  "2024",
+                                             "location":  "Frankfurt, Germany",
+                                             "description":  "A double-deck 600sqm exhibition stand for a leading automotive brand. Custom steel structure, acrylic elements, digital displays and branded furniture — shipped from Dubai and installed on-site.",
+                                             "thumbnail":  "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=85",
+                                             "gallery":  [
+                                                             "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=85",
+                                                             "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                         ]
+                                         },
+                                         {
+                                             "id":  "ex2",
+                                             "title":  "Retail Brand — Dubai Expo",
+                                             "category":  "Expo Pavilion",
+                                             "year":  "2023",
+                                             "location":  "Expo City Dubai",
+                                             "description":  "1,200sqm country pavilion featuring environmental branding, custom-built display structures, lightboxes and visitor experience zones.",
+                                             "thumbnail":  "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=85",
+                                             "gallery":  [
+                                                             "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=85",
+                                                             "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                         ]
+                                         },
+                                         {
+                                             "id":  "ex3",
+                                             "title":  "Real Estate Developer Stand",
+                                             "category":  "Exhibition Stand",
+                                             "year":  "2024",
+                                             "location":  "Cityscape Dubai",
+                                             "description":  "Premium 300sqm stand featuring a central branded pylon, scale model display, lounge zones, custom millwork and LED feature walls.",
+                                             "thumbnail":  "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=85",
+                                             "gallery":  [
+                                                             "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=85",
+                                                             "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                         ]
+                                         },
+                                         {
+                                             "id":  "ex4",
+                                             "title":  "Tech Brand — CES Las Vegas",
+                                             "category":  "Expo Stand",
+                                             "year":  "2024",
+                                             "location":  "Las Vegas, USA",
+                                             "description":  "Portable modular stand system designed for repeated use across global shows. Designed, fabricated and shipped from Dubai with on-site assembly guide.",
+                                             "thumbnail":  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=85",
+                                             "gallery":  [
+                                                             "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=85",
+                                                             "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                             "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                         ]
+                                         }
+                                     ]
+                    },
+    "fitout":  {
+                   "title":  "Fitout",
+                   "tagline":  "Interiors Built with Intent",
+                   "description":  "High-quality interior fit-out works for retail, corporate and hospitality spaces. Every centimetre is designed, engineered and built in-house — delivered on time, every time.",
+                   "icon":  "fa-ruler-combined",
+                   "projects":  [
+                                    {
+                                        "id":  "fo1",
+                                        "title":  "Corporate HQ — Financial Sector",
+                                        "category":  "Office Fitout",
+                                        "year":  "2024",
+                                        "location":  "DIFC, Dubai",
+                                        "description":  "Full fit-out of a 2,400sqm corporate headquarters. Custom millwork reception, partition systems, branded breakout zones, signage and branded environmental graphics.",
+                                        "thumbnail":  "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1400\u0026q=85",
+                                        "gallery":  [
+                                                        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1400\u0026q=85",
+                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                    ]
+                                    },
+                                    {
+                                        "id":  "fo2",
+                                        "title":  "Luxury Retail Store",
+                                        "category":  "Retail Fitout",
+                                        "year":  "2024",
+                                        "location":  "Dubai Mall",
+                                        "description":  "Premium retail store fitout featuring custom-crafted display units, acrylic showcase elements, branded wall graphics and precision carpentry.",
+                                        "thumbnail":  "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400\u0026q=85",
+                                        "gallery":  [
+                                                        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400\u0026q=85",
+                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                    ]
+                                    },
+                                    {
+                                        "id":  "fo3",
+                                        "title":  "Hotel Lobby Renovation",
+                                        "category":  "Hospitality Fitout",
+                                        "year":  "2023",
+                                        "location":  "JBR, Dubai",
+                                        "description":  "Complete lobby refresh including custom reception desk, branded feature wall, custom furniture and environmental signage — delivered in 3 weeks.",
+                                        "thumbnail":  "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1400\u0026q=85",
+                                        "gallery":  [
+                                                        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1400\u0026q=85",
+                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                    ]
+                                    },
+                                    {
+                                        "id":  "fo4",
+                                        "title":  "Food \u0026 Beverage Brand Expansion",
+                                        "category":  "F\u0026B Fitout",
+                                        "year":  "2023",
+                                        "location":  "Multiple Locations, UAE",
+                                        "description":  "Rollout fitout for a regional F\u0026B brand across 8 new locations — standardized design package delivered with speed and brand consistency across all sites.",
+                                        "thumbnail":  "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400\u0026q=85",
+                                        "gallery":  [
+                                                        "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400\u0026q=85",
+                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                    ]
+                                    }
+                                ]
+               },
+    "signages":  {
+                     "title":  "Signages and Large Format Printing",
+                     "tagline":  "Visuals With Impact at Any Scale",
+                     "description":  "From lightboxes and environmental signage to large-format printed graphics — A\u0026T\u0027s in-house print centre delivers precision output with expert installation.",
+                     "icon":  "fa-sign-hanging",
+                     "projects":  [
+                                      {
+                                          "id":  "si1",
+                                          "title":  "Airport Wayfinding System",
+                                          "category":  "Wayfinding",
+                                          "year":  "2024",
+                                          "location":  "Dubai, UAE",
+                                          "description":  "Complete wayfinding and signage system for a major logistics hub — 240+ sign units, custom fabricated, branded and installed across multiple zones.",
+                                          "thumbnail":  "https://images.unsplash.com/photo-1588693959604-3993d39ed708?w=1400\u0026q=85",
+                                          "gallery":  [
+                                                          "https://images.unsplash.com/photo-1588693959604-3993d39ed708?w=1400\u0026q=85",
+                                                          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                      ]
+                                      },
+                                      {
+                                          "id":  "si2",
+                                          "title":  "Stadium Branding Package",
+                                          "category":  "Environmental Branding",
+                                          "year":  "2024",
+                                          "location":  "UAE",
+                                          "description":  "Large-format wrap, super-sized banners and lightbox signage for a sporting venue. End-to-end from print production to installation.",
+                                          "thumbnail":  "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1400\u0026q=85",
+                                          "gallery":  [
+                                                          "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1400\u0026q=85",
+                                                          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                      ]
+                                      },
+                                      {
+                                          "id":  "si3",
+                                          "title":  "Retail Facade Branding",
+                                          "category":  "Signage \u0026 Print",
+                                          "year":  "2024",
+                                          "location":  "Abu Dhabi, UAE",
+                                          "description":  "Full facade branding system including illuminated channel letters, LED lightboxes and entrance wayfinding for a major retail destination.",
+                                          "thumbnail":  "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400\u0026q=85",
+                                          "gallery":  [
+                                                          "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400\u0026q=85",
+                                                          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                      ]
+                                      },
+                                      {
+                                          "id":  "si4",
+                                          "title":  "Construction Hoarding Wrap",
+                                          "category":  "Large-Format Print",
+                                          "year":  "2023",
+                                          "location":  "Dubai, UAE",
+                                          "description":  "900m of hoarding wrap for a premium real estate developer — art direction, large-format print and installation across the full site perimeter.",
+                                          "thumbnail":  "https://images.unsplash.com/photo-1504917595217-d4bf141d24c0?w=1400\u0026q=85",
+                                          "gallery":  [
+                                                          "https://images.unsplash.com/photo-1504917595217-d4bf141d24c0?w=1400\u0026q=85",
+                                                          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                      ]
+                                      }
+                                  ]
+                 },
+    "branding":  {
+                     "title":  "Branding",
+                     "tagline":  "Identity Made Physical",
+                     "description":  "Environmental branding that transforms visual identity into an immersive physical experience — at any scale, in any space, with production handled entirely in-house.",
+                     "icon":  "fa-palette",
+                     "projects":  [
+                                      {
+                                          "id":  "br1",
+                                          "title":  "Corporate Campus Branding",
+                                          "category":  "Environmental Branding",
+                                          "year":  "2024",
+                                          "location":  "Dubai Internet City",
+                                          "description":  "Full branding of a 5-building corporate campus — wall graphics, branded directional systems, reception environments and branded outdoor elements.",
+                                          "thumbnail":  "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1400\u0026q=85",
+                                          "gallery":  [
+                                                          "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1400\u0026q=85",
+                                                          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                      ]
+                                      },
+                                      {
+                                          "id":  "br2",
+                                          "title":  "Bank Branch Identity Rollout",
+                                          "category":  "Retail Branding",
+                                          "year":  "2024",
+                                          "location":  "UAE — 22 Branches",
+                                          "description":  "National rollout of refreshed brand identity for 22 branches — standardized interior branding system including wall graphics, branded millwork and signage kits.",
+                                          "thumbnail":  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1400\u0026q=85",
+                                          "gallery":  [
+                                                          "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1400\u0026q=85",
+                                                          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                      ]
+                                      },
+                                      {
+                                          "id":  "br3",
+                                          "title":  "Start-Up HQ Brand Launch",
+                                          "category":  "Office Branding",
+                                          "year":  "2023",
+                                          "location":  "Business Bay, Dubai",
+                                          "description":  "Full brand environment for a tech start-up new HQ — custom murals, branded zones, culture walls, typography-led wall graphics and fabricated logo elements.",
+                                          "thumbnail":  "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=85",
+                                          "gallery":  [
+                                                          "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=85",
+                                                          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                      ]
+                                      }
+                                  ]
+                 },
+    "manufacturing":  {
+                          "title":  "Custom Manufacturing",
+                          "tagline":  "Precision Built. In-House.",
+                          "description":  "In-house steel, carpentry and acrylic workshops delivering bespoke custom builds — for exhibitions, events, interiors and beyond. Engineered precisely, finished to perfection.",
+                          "icon":  "fa-industry",
+                          "projects":  [
+                                           {
+                                               "id":  "mf1",
+                                               "title":  "Steel Frame Display Structures",
+                                               "category":  "Steel Works",
+                                               "year":  "2024",
+                                               "location":  "A\u0026T Workshop, Dubai",
+                                               "description":  "Custom steel frame display towers for a global exhibition circuit — designed for repeated assembly, disassembly and transport across international venues.",
+                                               "thumbnail":  "https://images.unsplash.com/photo-1504917595217-d4bf141d24c0?w=1400\u0026q=85",
+                                               "gallery":  [
+                                                               "https://images.unsplash.com/photo-1504917595217-d4bf141d24c0?w=1400\u0026q=85",
+                                                               "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                           ]
+                                           },
+                                           {
+                                               "id":  "mf2",
+                                               "title":  "Acrylic Reception Desk",
+                                               "category":  "Acrylic \u0026 Carpentry",
+                                               "year":  "2024",
+                                               "location":  "Client Site, DIFC",
+                                               "description":  "Custom-fabricated acrylic and wood reception desk with integrated lighting and embossed brand logo — conceived, designed and built in the A\u0026T workshop.",
+                                               "thumbnail":  "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400\u0026q=85",
+                                               "gallery":  [
+                                                               "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400\u0026q=85",
+                                                               "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                           ]
+                                           },
+                                           {
+                                               "id":  "mf3",
+                                               "title":  "Custom Kiosk Series",
+                                               "category":  "Custom Build",
+                                               "year":  "2023",
+                                               "location":  "Retail Locations, UAE",
+                                               "description":  "Series of 18 custom-built retail kiosks for a regional brand — full design, fabrication, branding and delivery managed by A\u0026T.",
+                                               "thumbnail":  "https://images.unsplash.com/photo-1524634659484-4f10b316b67b?w=1400\u0026q=85",
+                                               "gallery":  [
+                                                               "https://images.unsplash.com/photo-1524634659484-4f10b316b67b?w=1400\u0026q=85",
+                                                               "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                           ]
+                                           },
+                                           {
+                                               "id":  "mf4",
+                                               "title":  "Exhibition Furniture Line",
+                                               "category":  "Furniture Production",
+                                               "year":  "2023",
+                                               "location":  "A\u0026T Workshop, Dubai",
+                                               "description":  "Full custom furniture line produced for a luxury brand\u0027s exhibition portfolio — benches, pedestals, branded display plinths and leather seating.",
+                                               "thumbnail":  "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400\u0026q=85",
+                                               "gallery":  [
+                                                               "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400\u0026q=85",
+                                                               "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                               "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                           ]
+                                           }
+                                       ]
+                      },
+    "rentals":  {
+                    "title":  "Furniture Rentals",
+                    "tagline":  "Premium Furniture, Delivered Ready",
+                    "description":  "Curated branded furniture and display pieces for events, shows and corporate spaces. Short or long-term rental with delivery, setup and collection managed by A\u0026T.",
+                    "icon":  "fa-couch",
+                    "projects":  [
+                                     {
+                                         "id":  "rn1",
+                                         "title":  "Exhibition Lounge Package",
+                                         "category":  "Furniture Rental",
+                                         "year":  "2024",
+                                         "location":  "DWTC, Dubai",
+                                         "description":  "Premium lounge furniture package for a major exhibition stand — sofas, coffee tables, branded ottomans and device charging stations for a 5-day event.",
+                                         "thumbnail":  "https://images.unsplash.com/photo-1505693314120-0d443867891c?w=1400\u0026q=85",
+                                         "gallery":  [
+                                                         "https://images.unsplash.com/photo-1505693314120-0d443867891c?w=1400\u0026q=85",
+                                                         "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                     ]
+                                     },
+                                     {
+                                         "id":  "rn2",
+                                         "title":  "Corporate Conference Setup",
+                                         "category":  "Furniture Rental",
+                                         "year":  "2024",
+                                         "location":  "Four Seasons, Dubai",
+                                         "description":  "Complete furniture rental for a 3-day corporate conference — 40 tables, 320 chairs, stage furniture, VIP lounge sets and branded accessories.",
+                                         "thumbnail":  "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=85",
+                                         "gallery":  [
+                                                         "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=85",
+                                                         "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                     ]
+                                     },
+                                     {
+                                         "id":  "rn3",
+                                         "title":  "Retail Pop-Up Furniture",
+                                         "category":  "Furniture Rental",
+                                         "year":  "2023",
+                                         "location":  "Dubai Mall",
+                                         "description":  "Stylish pop-up retail furniture rental — display tables, pedestals, branded stools and backdrops delivered and set up for a 2-week seasonal activation.",
+                                         "thumbnail":  "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400\u0026q=85",
+                                         "gallery":  [
+                                                         "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400\u0026q=85",
+                                                         "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
+                                                         "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                     ]
+                                     }
+                                 ]
+                }
+}

@@ -1,0 +1,23 @@
+# Local development files
+node_modules/
+.DS_Store
+Thumbs.db
+*.ps1
+*.js
+!index-portfolio.js
+!script.js
+!service.js
+!rentals.js
+!parse.js
+!rename_logos.js
+
+# Content management
+# (Don't ignore images if they are part of the site)
+# assets/uploads/
+
+# Admin/CMS
+#/admin/
+
+# Temporary files
+/tmp/
+.gemini/
