@@ -1507,3 +1507,105 @@ body.light-mode .marquee-row-inner img:hover {
     opacity: 0.9;
 }
 
+
+/* ============================================================
+   HERO WELCOME ANIMATION
+   ============================================================ */
+.hero-intro {
+    position: relative;
+    height: 80px; /* Adjust based on h1 size to prevent layout shift */
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.intro-text-wrap, .intro-logo-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: clip-path 0.8s var(--ease), opacity 0.8s var(--ease), transform 0.8s var(--ease);
+}
+
+.hero-intro h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.intro-logo-wrap img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Initial States */
+.intro-text-wrap {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+}
+.intro-logo-wrap {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+    transform: translateX(-20px);
+}
+
+/* Transitioning to Logo */
+.hero-intro.show-logo .intro-text-wrap {
+    opacity: 0;
+    clip-path: inset(0 0 0 100%);
+    transform: translateX(20px);
+}
+.hero-intro.show-logo .intro-logo-wrap {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .hero-intro {
+        height: 60px;
+        margin-bottom: 1.5rem;
+    }
+    .hero-intro h1 {
+        font-size: clamp(1.8rem, 10vw, 2.5rem);
+    }
+    .intro-logo-wrap img {
+        height: 44px;
+    }
+}
+
+
+/* WELCOME ANIMATION FIX - SMALLER & HIDDEN LOGO TEXT */
+.hero-intro { 
+    height: 55px !important; 
+    margin-bottom: 1.5rem !important; 
+    z-index: 100;
+}
+.hero-intro h1 { 
+    font-size: 2.1rem !important; 
+    letter-spacing: -0.01em !important; 
+    line-height: 1 !important;
+}
+.intro-logo-wrap img { 
+    height: 70px !important; /* Slightly taller to allow clipping */
+    width: auto !important; 
+    object-fit: contain !important; 
+    object-position: top !important; 
+    clip-path: inset(0 0 45% 0) !important; /* HIDE BOTTOM TEXT */
+    margin-top: -5px !important;
+}
+@media (max-width: 768px) { 
+    .hero-intro { height: 40px !important; } 
+    .hero-intro h1 { font-size: 1.4rem !important; } 
+    .intro-logo-wrap img { height: 45px !important; } 
+}
+
