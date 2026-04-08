@@ -274,6 +274,61 @@
         }
     }
 
-    initGlobalSettings();
+    // ============================================================
+    // 10. HERO WELCOME ANIMATION
+    // ============================================================
+    function initWelcomeAnimation() {
+        const heroIntro = document.getElementById('heroIntro');
+        const welcomeText = document.getElementById('welcomeText');
+        if (!heroIntro || !welcomeText) return;
+
+        const languages = [
+            { text: 'Welcome', lang: 'en' },
+            { text: 'Bienvenido', lang: 'es' },
+            { text: 'Velkommen', lang: 'da' },
+            { text: 'Witamy', lang: 'pl' },
+            { text: 'नमस्ते', lang: 'hi' },
+            { text: 'Bienvenue', lang: 'fr' },
+            { text: 'أهلاً بك', lang: 'ar' },
+            { text: 'Willkommen', lang: 'de' }
+        ];
+
+        let index = 0;
+
+        function cycle() {
+            // Show current language
+            const current = languages[index];
+            welcomeText.textContent = current.text;
+            
+            // Apply language-specific styling if needed
+            if (current.lang === 'ar') {
+                welcomeText.style.fontFamily = 'inherit'; // Ensure Arabic renders correctly
+                welcomeText.dir = 'rtl';
+            } else {
+                welcomeText.dir = 'ltr';
+            }
+
+            // 1. Wait 3 seconds
+            setTimeout(() => {
+                // 2. Swipe to Logo
+                heroIntro.classList.add('show-logo');
+
+                setTimeout(() => {
+                    // 3. Swipe back to next language
+                    heroIntro.classList.remove('show-logo');
+                    index = (index + 1) % languages.length;
+                    
+                    // Small delay to let swipe finish before changing text
+                    setTimeout(cycle, 800); 
+
+                }, 2000); // Duration of Logo display
+
+            }, 3000); // Duration of Text display
+        }
+
+        cycle();
+    }
+
+    initWelcomeAnimation();
 
 })();
