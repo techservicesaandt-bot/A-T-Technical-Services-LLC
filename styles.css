@@ -1609,3 +1609,5 @@ body.light-mode .marquee-row-inner img:hover {
     .intro-logo-wrap img { height: 45px !important; } 
 }
 
+/* LOGO CLIP FIX */
+.intro-logo-wrap img { clip-path: inset(0 0 25% 0) !important; }
