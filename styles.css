@@ -1388,3 +1388,122 @@ body.light-mode #services .sec-label { color: #000000 !important; }
 
 /* FINAL LIGHT MODE TITLE FIX */
 .light-mode #services .sec-label { color: #000000 !important; opacity: 1 !important; visibility: visible !important; }
+
+/* ============================================================
+   DUAL MOTION CLIENT MARQUEE
+   ============================================================ */
+.client-marquee-section {
+    padding: 6rem 0;
+    background: var(--bg);
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+}
+
+.marquee-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.marquee-row {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.marquee-row-inner {
+    display: flex;
+    flex-shrink: 0;
+    gap: 6rem;
+    align-items: center;
+    min-width: 100%;
+}
+
+.marquee-row-inner img {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.65;
+    transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.marquee-row-inner img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.marquee-row--ltr .marquee-row-inner {
+    animation: scroll-left 50s linear infinite;
+}
+
+.marquee-row--rtl .marquee-row-inner {
+    animation: scroll-right 50s linear infinite;
+}
+
+@keyframes scroll-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+
+/* MOBILE REFINEMENTS FOR PORTFOLIO BUTTON */
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 5% 60px !important;
+        height: auto !important;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .hero-cta {
+        position: relative !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 1rem !important;
+        margin-top: 3rem !important;
+        z-index: 20;
+    }
+    .hero-cta .btn-pill {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem !important;
+        font-size: 0.9rem !important;
+    }
+    .hero-stat {
+        margin-bottom: 1rem;
+    }
+    
+    .client-marquee-section {
+        padding: 4rem 0;
+    }
+    .marquee-row-inner img {
+        height: 32px;
+    }
+    .marquee-group {
+        gap: 2rem;
+    }
+}
+
+/* LIGHT MODE SUPPORT FOR MARQUEE */
+body.light-mode .marquee-row-inner img {
+    filter: brightness(0);
+    opacity: 0.5;
+}
+body.light-mode .marquee-row-inner img:hover {
+    opacity: 0.9;
+}
+
