@@ -231,7 +231,7 @@
     // ============================================================
     async function initGlobalSettings() {
         try {
-            const resp = await fetch('data/settings.json');
+            const resp = await fetch('/settings.json');
             if (!resp.ok) return;
             const settings = await resp.json();
 
