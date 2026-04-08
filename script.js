@@ -9,10 +9,12 @@
     const welcomeText = document.getElementById('welcomeText');
 
     // ============================================================
-    // 10. HERO WELCOME ANIMATION (FIXED)
+    // 10. HERO WELCOME ANIMATION (REFINED FADE CYCLE)
     // ============================================================
     function initWelcomeAnimation() {
         if (!heroIntro || !welcomeText) return;
+        const textWrap = document.querySelector('.intro-text-wrap');
+        const logoWrap = document.querySelector('.intro-logo-wrap');
 
         const languages = [
             { text: 'Welcome', lang: 'en' },
@@ -27,25 +29,39 @@
 
         let index = 0;
 
-        function cycle() {
+        async function cycle() {
+            // 1. Show Text
             const current = languages[index];
             welcomeText.textContent = current.text;
             welcomeText.dir = current.lang === 'ar' ? 'rtl' : 'ltr';
+            
+            textWrap.classList.add('active');
+            logoWrap.classList.remove('active');
 
-            // 1. Show text for 3s
-            setTimeout(() => {
-                heroIntro.classList.add('show-logo');
+            // Wait 2s (still)
+            await new Promise(r => setTimeout(r, 2000));
 
-                // 2. Show Logo for 2s
-                setTimeout(() => {
-                    heroIntro.classList.remove('show-logo');
-                    index = (index + 1) % languages.length;
-                    
-                    // 3. Wait for swipe back then repeat
-                    setTimeout(cycle, 1000); 
-                }, 2000);
+            // Fade Out
+            textWrap.classList.remove('active');
 
-            }, 3000);
+            // Wait 0.3s (blank)
+            await new Promise(r => setTimeout(r, 300) );
+
+            // 2. Show Logo
+            logoWrap.classList.add('active');
+
+            // Wait 2s (still)
+            await new Promise(r => setTimeout(r, 2000));
+
+            // Fade Out
+            logoWrap.classList.remove('active');
+
+            // Wait 0.3s (blank)
+            await new Promise(r => setTimeout(r, 300));
+
+            // Next
+            index = (index + 1) % languages.length;
+            cycle();
         }
 
         cycle();
