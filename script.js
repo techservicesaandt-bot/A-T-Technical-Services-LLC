@@ -336,6 +336,60 @@
         }
     }
 
+    // ============================================================
+    // 11. FLOATING BAR LOGIC (SCROLL & CLOCK)
+    // ============================================================
+    function initFloatingBar() {
+        const bar = document.getElementById('floatingBar');
+        const toTopBtn = document.getElementById('fbToTop');
+        const dateEl = document.getElementById('fbDateLabel');
+        const timeEl = document.getElementById('fbTimeLabel');
+
+        if (!bar) return;
+
+        // A. Scroll Reveal
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                bar.classList.add('visible');
+            } else {
+                bar.classList.remove('visible');
+            }
+        });
+
+        // B. Back to Top
+        if (toTopBtn) {
+            toTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // C. System Clock
+        function updateClock() {
+            const now = new Date();
+            
+            // Format: WED, APR 08
+            const dateStr = now.toLocaleDateString('en-US', { 
+                weekday: 'short', 
+                month: 'short', 
+                day: '2-digit' 
+            }).toUpperCase();
+            
+            // Format: 18:35
+            const timeStr = now.toLocaleTimeString('en-US', { 
+                hour12: false, 
+                hour: '2-digit', 
+                minute: '2-digit' 
+            });
+
+            if (dateEl) dateEl.textContent = dateStr;
+            if (timeEl) timeEl.textContent = timeStr;
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000 * 30); // Update every 30s
+    }
+
+    initFloatingBar();
     initGlobalSettings();
 
 })();
