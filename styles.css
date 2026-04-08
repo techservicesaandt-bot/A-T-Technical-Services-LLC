@@ -1611,3 +1611,79 @@ body.light-mode .marquee-row-inner img:hover {
 
 /* LOGO CLIP FIX */
 .intro-logo-wrap img { clip-path: inset(0 0 25% 0) !important; }
+
+/* FINAL WELCOME ANIMATION FIX - ROBUST & SCALED */
+.hero-intro { 
+    height: 100px !important; 
+    margin-bottom: 2rem !important; 
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    overflow: visible !important; /* Allow internal wrappers to clip */
+    position: relative !important;
+    width: 100% !important;
+}
+
+.intro-text-wrap {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.intro-logo-wrap {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 120px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important; /* THIS CLIPS THE LOGO TEXT */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-intro h1 { 
+    font-size: clamp(2rem, 5vw, 3.5rem) !important; 
+    color: #fff !important;
+    margin: 0 !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+}
+
+.intro-logo-wrap img { 
+    height: 140px !important; /* Back to larger size then clipped by container */
+    width: auto !important; 
+    min-width: 140px !important;
+    object-fit: contain !important; 
+    object-position: top !important; 
+    margin-top: -10px !important; /* Move it up to hide letters via container overflow */
+}
+
+/* Transition States */
+.hero-intro.show-logo .intro-text-wrap {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.hero-intro.show-logo .intro-logo-wrap {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MOBILE REFINEMENTS */
+@media (max-width: 768px) { 
+    .hero-intro { height: 70px !important; margin-bottom: 1rem !important; } 
+    .hero-intro h1 { font-size: 1.8rem !important; } 
+    .intro-logo-wrap { width: 80px !important; }
+    .intro-logo-wrap img { height: 100px !important; min-width: 100px !important; margin-top: -5px !important; } 
+}
+
