@@ -1740,3 +1740,71 @@ body.light-mode .marquee-row-inner img:hover {
     .intro-logo-wrap img { height: 45px !important; } 
 }
 
+
+/* PREMIUM SERVICE TILES REDESIGN */
+.svc-tile { 
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: #000 !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
+}
+
+body.light-mode .svc-tile {
+    border-color: rgba(0, 0, 0, 0.05) !important;
+    background: #fff !important;
+}
+
+.svc-tile-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%) !important;
+    align-items: flex-end !important;
+    justify-content: flex-start !important;
+    padding: 2rem !important;
+    opacity: 1 !important; /* Always show title */
+}
+
+.svc-tile-overlay h3 {
+    text-shadow: none !important;
+    font-size: 1.6rem !important;
+    transform: translateY(10px);
+    transition: transform 0.4s var(--ease);
+}
+
+.svc-tile:hover .svc-tile-overlay h3 {
+    transform: translateY(0);
+}
+
+.svc-tile-btn {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    transform: scale(0.9);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.svc-tile:hover .svc-tile-btn {
+    background: var(--red) !important;
+    border-color: var(--red) !important;
+    transform: scale(1.1) rotate(-45deg) !important;
+}
+
+.svc-tile img {
+    height: 380px !important;
+    transition: transform 0.8s cubic-bezier(0.2, 0, 0, 1) !important;
+}
+
+.svc-tile:hover img {
+    transform: scale(1.1) !important;
+}
+
+/* Light Mode Card Specifics */
+body.light-mode .svc-tile-overlay h3 {
+    color: #fff !important; /* Keep text white on dark gradient for readability */
+}
+
+@media (max-width: 768px) {
+    .svc-tile img { height: 280px !important; }
+    .svc-tile-overlay { padding: 1.2rem !important; }
+    .svc-tile-overlay h3 { font-size: 1.3rem !important; }
+}
+
