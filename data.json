@@ -1,8 +1,8 @@
-﻿{
+{
     "events":  {
                    "title":  "Events",
                    "tagline":  "Environments That Move People",
-                   "description":  "From corporate galas to large-scale product launches, A\u0026T designs and delivers complete event environments with precision and creative force — every detail controlled in-house.",
+                   "description":  "From corporate galas to large-scale product launches, A\u0026T designs and delivers complete event environments with precision and creative force â€” every detail controlled in-house.",
                    "icon":  "fa-calendar-star",
                    "projects":  [
                                     {
@@ -28,7 +28,7 @@
                                     },
                                     {
                                         "id":  "ev2",
-                                        "title":  "Tech Activation – GITEX 2024",
+                                        "title":  "Tech Activation â€“ GITEX 2024",
                                         "category":  "Activation",
                                         "year":  "2024",
                                         "location":  "Dubai, UAE",
@@ -49,7 +49,7 @@
                                     },
                                     {
                                         "id":  "ev3",
-                                        "title":  "Awards Gala – Hospitality Sector",
+                                        "title":  "Awards Gala â€“ Hospitality Sector",
                                         "category":  "Gala Event",
                                         "year":  "2024",
                                         "location":  "Atlantis The Palm, Dubai",
@@ -124,7 +124,7 @@
                                              "category":  "Exhibition Stand",
                                              "year":  "2024",
                                              "location":  "Frankfurt, Germany",
-                                             "description":  "A double-deck 600sqm exhibition stand for a leading automotive brand. Custom steel structure, acrylic elements, digital displays and branded furniture — shipped from Dubai and installed on-site.",
+                                             "description":  "A double-deck 600sqm exhibition stand for a leading automotive brand. Custom steel structure, acrylic elements, digital displays and branded furniture â€” shipped from Dubai and installed on-site.",
                                              "thumbnail":  "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=85",
                                              "gallery":  [
                                                              "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=85",
@@ -141,7 +141,7 @@
                                          },
                                          {
                                              "id":  "ex2",
-                                             "title":  "Retail Brand — Dubai Expo",
+                                             "title":  "Retail Brand â€” Dubai Expo",
                                              "category":  "Expo Pavilion",
                                              "year":  "2023",
                                              "location":  "Expo City Dubai",
@@ -183,7 +183,7 @@
                                          },
                                          {
                                              "id":  "ex4",
-                                             "title":  "Tech Brand — CES Las Vegas",
+                                             "title":  "Tech Brand â€” CES Las Vegas",
                                              "category":  "Expo Stand",
                                              "year":  "2024",
                                              "location":  "Las Vegas, USA",
@@ -207,12 +207,12 @@
     "fitout":  {
                    "title":  "Fitout",
                    "tagline":  "Interiors Built with Intent",
-                   "description":  "High-quality interior fit-out works for retail, corporate and hospitality spaces. Every centimetre is designed, engineered and built in-house — delivered on time, every time.",
+                   "description":  "High-quality interior fit-out works for retail, corporate and hospitality spaces. Every centimetre is designed, engineered and built in-house â€” delivered on time, every time.",
                    "icon":  "fa-ruler-combined",
                    "projects":  [
                                     {
                                         "id":  "fo1",
-                                        "title":  "Corporate HQ — Financial Sector",
+                                        "title":  "Corporate HQ â€” Financial Sector",
                                         "category":  "Office Fitout",
                                         "year":  "2024",
                                         "location":  "DIFC, Dubai",
@@ -258,7 +258,7 @@
                                         "category":  "Hospitality Fitout",
                                         "year":  "2023",
                                         "location":  "JBR, Dubai",
-                                        "description":  "Complete lobby refresh including custom reception desk, branded feature wall, custom furniture and environmental signage — delivered in 3 weeks.",
+                                        "description":  "Complete lobby refresh including custom reception desk, branded feature wall, custom furniture and environmental signage â€” delivered in 3 weeks.",
                                         "thumbnail":  "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1400\u0026q=85",
                                         "gallery":  [
                                                         "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1400\u0026q=85",
@@ -279,7 +279,7 @@
                                         "category":  "F\u0026B Fitout",
                                         "year":  "2023",
                                         "location":  "Multiple Locations, UAE",
-                                        "description":  "Rollout fitout for a regional F\u0026B brand across 8 new locations — standardized design package delivered with speed and brand consistency across all sites.",
+                                        "description":  "Rollout fitout for a regional F\u0026B brand across 8 new locations â€” standardized design package delivered with speed and brand consistency across all sites.",
                                         "thumbnail":  "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400\u0026q=85",
                                         "gallery":  [
                                                         "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400\u0026q=85",
@@ -299,7 +299,7 @@
     "signages":  {
                      "title":  "Signages and Large Format Printing",
                      "tagline":  "Visuals With Impact at Any Scale",
-                     "description":  "From lightboxes and environmental signage to large-format printed graphics — A\u0026T\u0027s in-house print centre delivers precision output with expert installation.",
+                     "description":  "From lightboxes and environmental signage to large-format printed graphics â€” A\u0026T\u0027s in-house print centre delivers precision output with expert installation.",
                      "icon":  "fa-sign-hanging",
                      "projects":  [
                                       {
@@ -308,7 +308,7 @@
                                           "category":  "Wayfinding",
                                           "year":  "2024",
                                           "location":  "Dubai, UAE",
-                                          "description":  "Complete wayfinding and signage system for a major logistics hub — 240+ sign units, custom fabricated, branded and installed across multiple zones.",
+                                          "description":  "Complete wayfinding and signage system for a major logistics hub â€” 240+ sign units, custom fabricated, branded and installed across multiple zones.",
                                           "thumbnail":  "https://images.unsplash.com/photo-1588693959604-3993d39ed708?w=1400\u0026q=85",
                                           "gallery":  [
                                                           "https://images.unsplash.com/photo-1588693959604-3993d39ed708?w=1400\u0026q=85",
@@ -371,7 +371,7 @@
                                           "category":  "Large-Format Print",
                                           "year":  "2023",
                                           "location":  "Dubai, UAE",
-                                          "description":  "900m of hoarding wrap for a premium real estate developer — art direction, large-format print and installation across the full site perimeter.",
+                                          "description":  "900m of hoarding wrap for a premium real estate developer â€” art direction, large-format print and installation across the full site perimeter.",
                                           "thumbnail":  "https://images.unsplash.com/photo-1504917595217-d4bf141d24c0?w=1400\u0026q=85",
                                           "gallery":  [
                                                           "https://images.unsplash.com/photo-1504917595217-d4bf141d24c0?w=1400\u0026q=85",
@@ -391,7 +391,7 @@
     "branding":  {
                      "title":  "Branding",
                      "tagline":  "Identity Made Physical",
-                     "description":  "Environmental branding that transforms visual identity into an immersive physical experience — at any scale, in any space, with production handled entirely in-house.",
+                     "description":  "Environmental branding that transforms visual identity into an immersive physical experience â€” at any scale, in any space, with production handled entirely in-house.",
                      "icon":  "fa-palette",
                      "projects":  [
                                       {
@@ -400,7 +400,7 @@
                                           "category":  "Environmental Branding",
                                           "year":  "2024",
                                           "location":  "Dubai Internet City",
-                                          "description":  "Full branding of a 5-building corporate campus — wall graphics, branded directional systems, reception environments and branded outdoor elements.",
+                                          "description":  "Full branding of a 5-building corporate campus â€” wall graphics, branded directional systems, reception environments and branded outdoor elements.",
                                           "thumbnail":  "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1400\u0026q=85",
                                           "gallery":  [
                                                           "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1400\u0026q=85",
@@ -420,8 +420,8 @@
                                           "title":  "Bank Branch Identity Rollout",
                                           "category":  "Retail Branding",
                                           "year":  "2024",
-                                          "location":  "UAE — 22 Branches",
-                                          "description":  "National rollout of refreshed brand identity for 22 branches — standardized interior branding system including wall graphics, branded millwork and signage kits.",
+                                          "location":  "UAE â€” 22 Branches",
+                                          "description":  "National rollout of refreshed brand identity for 22 branches â€” standardized interior branding system including wall graphics, branded millwork and signage kits.",
                                           "thumbnail":  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1400\u0026q=85",
                                           "gallery":  [
                                                           "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1400\u0026q=85",
@@ -442,7 +442,7 @@
                                           "category":  "Office Branding",
                                           "year":  "2023",
                                           "location":  "Business Bay, Dubai",
-                                          "description":  "Full brand environment for a tech start-up new HQ — custom murals, branded zones, culture walls, typography-led wall graphics and fabricated logo elements.",
+                                          "description":  "Full brand environment for a tech start-up new HQ â€” custom murals, branded zones, culture walls, typography-led wall graphics and fabricated logo elements.",
                                           "thumbnail":  "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=85",
                                           "gallery":  [
                                                           "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=85",
@@ -462,7 +462,7 @@
     "manufacturing":  {
                           "title":  "Custom Manufacturing",
                           "tagline":  "Precision Built. In-House.",
-                          "description":  "In-house steel, carpentry and acrylic workshops delivering bespoke custom builds — for exhibitions, events, interiors and beyond. Engineered precisely, finished to perfection.",
+                          "description":  "In-house steel, carpentry and acrylic workshops delivering bespoke custom builds â€” for exhibitions, events, interiors and beyond. Engineered precisely, finished to perfection.",
                           "icon":  "fa-industry",
                           "projects":  [
                                            {
@@ -471,7 +471,7 @@
                                                "category":  "Steel Works",
                                                "year":  "2024",
                                                "location":  "A\u0026T Workshop, Dubai",
-                                               "description":  "Custom steel frame display towers for a global exhibition circuit — designed for repeated assembly, disassembly and transport across international venues.",
+                                               "description":  "Custom steel frame display towers for a global exhibition circuit â€” designed for repeated assembly, disassembly and transport across international venues.",
                                                "thumbnail":  "https://images.unsplash.com/photo-1504917595217-d4bf141d24c0?w=1400\u0026q=85",
                                                "gallery":  [
                                                                "https://images.unsplash.com/photo-1504917595217-d4bf141d24c0?w=1400\u0026q=85",
@@ -492,7 +492,7 @@
                                                "category":  "Acrylic \u0026 Carpentry",
                                                "year":  "2024",
                                                "location":  "Client Site, DIFC",
-                                               "description":  "Custom-fabricated acrylic and wood reception desk with integrated lighting and embossed brand logo — conceived, designed and built in the A\u0026T workshop.",
+                                               "description":  "Custom-fabricated acrylic and wood reception desk with integrated lighting and embossed brand logo â€” conceived, designed and built in the A\u0026T workshop.",
                                                "thumbnail":  "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400\u0026q=85",
                                                "gallery":  [
                                                                "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400\u0026q=85",
@@ -513,7 +513,7 @@
                                                "category":  "Custom Build",
                                                "year":  "2023",
                                                "location":  "Retail Locations, UAE",
-                                               "description":  "Series of 18 custom-built retail kiosks for a regional brand — full design, fabrication, branding and delivery managed by A\u0026T.",
+                                               "description":  "Series of 18 custom-built retail kiosks for a regional brand â€” full design, fabrication, branding and delivery managed by A\u0026T.",
                                                "thumbnail":  "https://images.unsplash.com/photo-1524634659484-4f10b316b67b?w=1400\u0026q=85",
                                                "gallery":  [
                                                                "https://images.unsplash.com/photo-1524634659484-4f10b316b67b?w=1400\u0026q=85",
@@ -534,7 +534,7 @@
                                                "category":  "Furniture Production",
                                                "year":  "2023",
                                                "location":  "A\u0026T Workshop, Dubai",
-                                               "description":  "Full custom furniture line produced for a luxury brand\u0027s exhibition portfolio — benches, pedestals, branded display plinths and leather seating.",
+                                               "description":  "Full custom furniture line produced for a luxury brand\u0027s exhibition portfolio â€” benches, pedestals, branded display plinths and leather seating.",
                                                "thumbnail":  "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400\u0026q=85",
                                                "gallery":  [
                                                                "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400\u0026q=85",
@@ -563,7 +563,7 @@
                                          "category":  "Furniture Rental",
                                          "year":  "2024",
                                          "location":  "DWTC, Dubai",
-                                         "description":  "Premium lounge furniture package for a major exhibition stand — sofas, coffee tables, branded ottomans and device charging stations for a 5-day event.",
+                                         "description":  "Premium lounge furniture package for a major exhibition stand â€” sofas, coffee tables, branded ottomans and device charging stations for a 5-day event.",
                                          "thumbnail":  "https://images.unsplash.com/photo-1505693314120-0d443867891c?w=1400\u0026q=85",
                                          "gallery":  [
                                                          "https://images.unsplash.com/photo-1505693314120-0d443867891c?w=1400\u0026q=85",
@@ -584,7 +584,7 @@
                                          "category":  "Furniture Rental",
                                          "year":  "2024",
                                          "location":  "Four Seasons, Dubai",
-                                         "description":  "Complete furniture rental for a 3-day corporate conference — 40 tables, 320 chairs, stage furniture, VIP lounge sets and branded accessories.",
+                                         "description":  "Complete furniture rental for a 3-day corporate conference â€” 40 tables, 320 chairs, stage furniture, VIP lounge sets and branded accessories.",
                                          "thumbnail":  "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=85",
                                          "gallery":  [
                                                          "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=85",
@@ -605,7 +605,7 @@
                                          "category":  "Furniture Rental",
                                          "year":  "2023",
                                          "location":  "Dubai Mall",
-                                         "description":  "Stylish pop-up retail furniture rental — display tables, pedestals, branded stools and backdrops delivered and set up for a 2-week seasonal activation.",
+                                         "description":  "Stylish pop-up retail furniture rental â€” display tables, pedestals, branded stools and backdrops delivered and set up for a 2-week seasonal activation.",
                                          "thumbnail":  "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400\u0026q=85",
                                          "gallery":  [
                                                          "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1400\u0026q=85",
@@ -621,5 +621,33 @@
                                                      ]
                                      }
                                  ]
-                }
+                },
+    "team": [
+        {
+            "name": "Team Member 1",
+            "position": "Director",
+            "bio": "Dedicated to providing world-class execution for every project.",
+            "img": "https://i.pravatar.cc/600?img=21"
+        },
+        {
+            "name": "Team Member 2",
+            "position": "Project Manager",
+            "bio": "Dedicated to providing world-class execution for every project.",
+            "img": "https://i.pravatar.cc/600?img=22"
+        },
+        {
+            "name": "Team Member 3",
+            "position": "Lead Designer",
+            "bio": "Dedicated to providing world-class execution for every project.",
+            "img": "https://i.pravatar.cc/600?img=23"
+        }
+    ],
+    "placeholders": {
+        "contact_name": "Your Name *",
+        "contact_email": "Official Email *",
+        "contact_company": "Company Name",
+        "contact_message": "Tell us about your project...",
+        "contact_submit": "Send Request"
+    },
+    "formspree_id": "xaqlzaez"
 }
