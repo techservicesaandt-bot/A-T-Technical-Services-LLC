@@ -14,7 +14,6 @@
     function initWelcomeAnimation() {
         if (!heroIntro || !welcomeText) return;
         const textWrap = document.querySelector('.intro-text-wrap');
-        const logoWrap = document.querySelector('.intro-logo-wrap');
 
         const languages = [
             { text: 'Welcome', lang: 'en' },
@@ -36,28 +35,15 @@
             welcomeText.dir = current.lang === 'ar' ? 'rtl' : 'ltr';
             
             textWrap.classList.add('active');
-            logoWrap.classList.remove('active');
 
-            // Wait 2s (still)
-            await new Promise(r => setTimeout(r, 2000));
+            // Wait 1.2s (still) - Faster pace
+            await new Promise(r => setTimeout(r, 1200));
 
             // Fade Out
             textWrap.classList.remove('active');
 
-            // Wait 0.3s (blank)
-            await new Promise(r => setTimeout(r, 300) );
-
-            // 2. Show Logo
-            logoWrap.classList.add('active');
-
-            // Wait 2s (still)
-            await new Promise(r => setTimeout(r, 2000));
-
-            // Fade Out
-            logoWrap.classList.remove('active');
-
-            // Wait 0.3s (blank)
-            await new Promise(r => setTimeout(r, 300));
+            // Wait 0.1s (tiny gap)
+            await new Promise(r => setTimeout(r, 100));
 
             // Next
             index = (index + 1) % languages.length;
@@ -389,6 +375,47 @@
         setInterval(updateClock, 1000 * 30); // Update every 30s
     }
 
+    // ============================================================
+    // 12. SERVICES SCROLL (MOBILE ARROWS)
+    // ============================================================
+    function initServicesScroll() {
+        const grid = document.getElementById('svcGrid');
+        const prev = document.getElementById('svcPrev');
+        const next = document.getElementById('svcNext');
+
+        if (!grid || !prev || !next) return;
+
+        const scrollAmount = 300; 
+
+        prev.addEventListener('click', () => {
+            grid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+
+        next.addEventListener('click', () => {
+            grid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+    }
+
+    // ============================================================
+    // 13. PARALLAX EFFECT
+    // ============================================================
+    function initParallax() {
+        const parallaxEls = document.querySelectorAll('[data-parallax]');
+        if (parallaxEls.length === 0) return;
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            
+            parallaxEls.forEach(el => {
+                const speed = parseFloat(el.getAttribute('data-parallax')) || 0.1;
+                const offset = scrolled * speed;
+                el.style.transform = `translateY(${offset}px)`;
+            });
+        });
+    }
+
+    initParallax();
+    initServicesScroll();
     initFloatingBar();
     initGlobalSettings();
 
