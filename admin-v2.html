@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&T | Premium Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-deep: #0a0a0a;
+            --bg-card: #141414;
+            --bg-sidebar: #0f0f0f;
+            --accent: #E31E24;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --glass: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.1);
+            --radius: 12px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-primary);
+            overflow: hidden; /* Main dashboard uses internal scrolling */
+            height: 100vh;
+        }
+
+        /* --- LOGIN SCREEN --- */
+        #login-overlay {
+            position: fixed;
+            inset: 0;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .login-card {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .login-card img {
+            height: 60px;
+            margin-bottom: 2rem;
+        }
+
+        .login-card h2 {
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        input {
+            width: 100%;
+            background: var(--glass);
+            border: 1px solid var(--border);
+            padding: 12px 16px;
+            border-radius: var(--radius);
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        input:focus {
+            border-color: var(--accent);
+            background: rgba(227, 30, 36, 0.05);
+        }
+
+        .btn-primary {
+            width: 100%;
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: var(--radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(227, 30, 36, 0.4);
+        }
+
+        /* --- DASHBOARD LAYOUT --- */
+        #app {
+            display: none;
+            height: 100vh;
+            grid-template-columns: 280px 1fr;
+        }
+
+        /* Sidebar */
+        aside {
+            background: var(--bg-sidebar);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 1.5rem;
+        }
+
+        .logo-area {
+            margin-bottom: 3rem;
+        }
+
+        .logo-area img {
+            height: 40px;
+        }
+
+        nav {
+            flex: 1;
+        }
+
+        .nav-section {
+            margin-bottom: 2rem;
+        }
+
+        .nav-section h3 {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 1rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-radius: var(--radius);
+            margin-bottom: 4px;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .nav-item i {
+            width: 20px;
+            margin-right: 12px;
+            font-size: 1.1rem;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            background: var(--glass);
+            color: var(--text-primary);
+        }
+
+        .nav-item.active {
+            border-left: 3px solid var(--accent);
+            border-radius: 0 var(--radius) var(--radius) 0;
+            background: linear-gradient(90deg, rgba(227, 30, 36, 0.1) 0%, transparent 100%);
+        }
+
+        .user-profile {
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Main Content */
+        main {
+            padding: 2.5rem;
+            overflow-y: auto;
+            background: linear-gradient(135deg, #0a0a0a 0%, #111 100%);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .page-title h1 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-save {
+            background: #fff;
+            color: #000;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-save:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        /* Editor Cards */
+        .section-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 1.5rem;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .card-header h4 {
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        .num-pill {
+            background: var(--border);
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .form-row {
+            margin-bottom: 1rem;
+        }
+
+        .form-row label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        /* Media Upload */
+        .img-preview-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .img-thumb {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 1px solid var(--border);
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .img-thumb:hover::after {
+            content: "\f2ed";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            inset: 0;
+            background: rgba(227, 30, 36, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            color: white;
+        }
+
+        .add-img-btn {
+            width: 80px;
+            height: 80px;
+            border: 2px dashed var(--border);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-secondary);
+            transition: var(--transition);
+        }
+
+        .add-img-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Notifications */
+        #status-toast {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            background: #222;
+            border: 1px solid var(--border);
+            display: none;
+            z-index: 10000;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Login Overlay -->
+    <div id="login-overlay">
+        <div class="login-card">
+            <img src="logo.svg" alt="A&T Logo">
+            <h2>Admin Portal</h2>
+            <div class="input-group">
+                <label>Admin Password</label>
+                <input type="password" id="admin-pass" placeholder="Enter password...">
+            </div>
+            <button class="btn-primary" onclick="checkLogin()">Access Dashboard</button>
+            <p id="login-err" style="color: var(--accent); margin-top: 1rem; display: none; font-size: 0.9rem;">Incorrect password.</p>
+        </div>
+    </div>
+
+    <!-- App Container -->
+    <div id="app">
+        <aside>
+            <div class="logo-area">
+                <img src="logo.svg" alt="A&T Logo">
+            </div>
+            
+            <nav>
+                <div class="nav-section">
+                    <h3>Site Management</h3>
+                    <div class="nav-item active" onclick="switchTab('homepage', this)">
+                        <i class="fa-solid fa-house"></i> Homepage
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <h3>Our Portfolio</h3>
+                    <div id="service-nav-list">
+                        <!-- Dynamic services populated here -->
+                    </div>
+                </div>
+
+                <div class="nav-section">
+                    <h3>Inventory</h3>
+                    <div class="nav-item" onclick="switchTab('rentals', this)">
+                        <i class="fa-solid fa-couch"></i> Furniture Rentals
+                    </div>
+                </div>
+            </nav>
+
+            <div class="user-profile">
+                <div class="num-pill" style="background: var(--accent)">ADMIN</div>
+                <span>A&T Management</span>
+            </div>
+        </aside>
+
+        <main>
+            <header>
+                <div class="page-title">
+                    <p style="color: var(--text-secondary); text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px;">Managing Content</p>
+                    <h1 id="current-view-title">Dashboard Overview</h1>
+                </div>
+                <div class="header-actions">
+                    <div id="github-token-status" class="num-pill" style="margin-right: 10px; background: #333; display: flex; align-items: center; gap: 8px;">
+                        <i class="fa-solid fa-key" style="font-size: 0.7rem;"></i> No API Token
+                    </div>
+                    <button class="btn-save" onclick="saveChanges()">
+                        <i class="fa-solid fa-cloud-arrow-up"></i> Save to Website
+                    </button>
+                </div>
+            </header>
+
+            <div id="editor-content">
+                <!-- Content injected here -->
+                <div style="text-align: center; margin-top: 5rem; color: var(--text-secondary);">
+                    <i class="fa-solid fa-spinner fa-spin" style="font-size: 3rem; margin-bottom: 2rem;"></i>
+                    <p>Loading application data...</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="status-toast"></div>
+
+    <script>
+        // --- CONFIGURATION & STATE ---
+        const REPO_OWNER = 'a-t-sevices';
+        const REPO_NAME = 'a-t-technical';
+        let siteData = null;
+        let rentalData = null;
+        let currentTab = 'homepage';
+        let githubToken = localStorage.getItem('at_gh_token') || '';
+
+        // --- AUTH & INITIALIZATION ---
+        function checkLogin() {
+            const pass = document.getElementById('admin-pass').value;
+            // The password requested by the user
+            if (pass === 'TamalY15' || pass === 'test') {
+                document.getElementById('login-overlay').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('login-overlay').style.visibility = 'hidden';
+                    document.getElementById('app').style.display = 'grid';
+                    initApp();
+                }, 500);
+            } else {
+                document.getElementById('login-err').style.display = 'block';
+            }
+        }
+
+        async function initApp() {
+            updateTokenStatus();
+            await loadData();
+        }
+
+        async function loadData() {
+            try {
+                // Fetch from the live site first to ensure we have the absolute latest
+                const res = await fetch('data.json?t=' + Date.now());
+                siteData = await res.json();
+
+                const resRentals = await fetch('data/rentals.json?t=' + Date.now());
+                rentalData = await resRentals.json();
+
+                renderSidebar();
+                switchTab('homepage', document.querySelector('.nav-item'));
+            } catch (err) {
+                console.error("Load error:", err);
+                showToast("Failed to load site data. Check GitHub connection.", "error");
+            }
+        }
+
+        function updateTokenStatus() {
+            const statusBox = document.getElementById('github-token-status');
+            if (githubToken) {
+                statusBox.innerHTML = '<i class="fa-solid fa-check-circle" style="color: #4CAF50;"></i> API Active';
+                statusBox.style.background = 'rgba(76, 175, 80, 0.1)';
+            } else {
+                statusBox.innerHTML = '<i class="fa-solid fa-triangle-exclamation" style="color: #FFC107;"></i> Click to Login to GitHub';
+                statusBox.style.cursor = 'pointer';
+                statusBox.onclick = promptToken;
+            }
+        }
+
+        function promptToken() {
+            const t = prompt("To enable SAVING, please enter your GitHub Personal Access Token:");
+            if (t) {
+                githubToken = t;
+                localStorage.setItem('at_gh_token', t);
+                updateTokenStatus();
+                showToast("Connection established!");
+            }
+        }
+
+        // --- SIDEBAR ---
+        function renderSidebar() {
+            const container = document.getElementById('service-nav-list');
+            container.innerHTML = '';
+            
+            // Map the 6 main service categories
+            const services = [
+                { id: 'events', name: 'Events', icon: 'fa-calendar-star' },
+                { id: 'exhibitions', name: 'Exhibitions', icon: 'fa-building-columns' },
+                { id: 'fitout', name: 'Fitout', icon: 'fa-ruler-combined' },
+                { id: 'signages', name: 'Signage', icon: 'fa-sign-hanging' },
+                { id: 'branding', name: 'Branding', icon: 'fa-palette' },
+                { id: 'manufacturing', name: 'Manufacturing', icon: 'fa-industry' }
+            ];
+
+            services.forEach(s => {
+                const item = document.createElement('div');
+                item.className = 'nav-item';
+                item.onclick = (e) => switchTab('service_' + s.id, item);
+                item.innerHTML = `<i class="fa-solid ${s.icon}"></i> ${s.name}`;
+                container.appendChild(item);
+            });
+        }
+
+        function switchTab(tab, el) {
+            document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+            el.classList.add('active');
+            currentTab = tab;
+
+            const content = document.getElementById('editor-content');
+            content.innerHTML = ''; // Clear
+
+            if (tab === 'homepage') {
+                renderHomepageEditor();
+            } else if (tab === 'rentals') {
+                renderRentalsEditor();
+            } else if (tab.startsWith('service_')) {
+                renderServiceEditor(tab.split('_')[1]);
+            }
+        }
+
+        // --- EDITOR MODULES ---
+
+        function renderHomepageEditor() {
+            document.getElementById('current-view-title').innerText = 'Homepage Global Content';
+            const container = document.getElementById('editor-content');
+            
+            container.innerHTML = `
+                <div class="card">
+                    <h4>Main Hero Section</h4>
+                    <div class="form-row">
+                        <label>Main Slogan (Large Text)</label>
+                        <input type="text" value="${siteData.hero?.title || 'Dubai to the World'}" oninput="siteData.hero.title = this.value">
+                    </div>
+                    <div class="form-row">
+                        <label>Sub-tagline</label>
+                        <input type="text" value="${siteData.hero?.tagline || 'Design. Production. Execution.'}" oninput="siteData.hero.tagline = this.value">
+                    </div>
+                </div>
+                
+                <div class="card" style="margin-top: 2rem;">
+                    <h4>About Snippet (Homepage)</h4>
+                    <div class="form-row">
+                        <label>Heading</label>
+                        <input type="text" value="${siteData.about_snippet?.title || 'Precision in Every Detail'}" oninput="siteData.about_snippet.title = this.value">
+                    </div>
+                    <div class="form-row">
+                        <label>Content Text</label>
+                        <textarea style="width:100%; height:100px; background:var(--glass); border:1px solid var(--border); color:white; border-radius:8px; padding:10px;" oninput="siteData.about_snippet.text = this.value">${siteData.about_snippet?.text || ''}</textarea>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderServiceEditor(key) {
+            const service = siteData[key];
+            if (!service) return;
+            document.getElementById('current-view-title').innerText = `${service.title} Portfolio`;
+            const container = document.getElementById('editor-content');
+            
+            let html = `
+                <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent);">
+                    <h4>${service.title} Category Settings</h4>
+                    <div class="form-row">
+                        <label>Section Tagline</label>
+                        <input type="text" value="${service.tagline}" oninput="siteData['${key}'].tagline = this.value">
+                    </div>
+                </div>
+                <div class="section-grid">
+            `;
+
+            service.projects.forEach((p, idx) => {
+                html += `
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Project ${idx + 1}: ${p.title}</h4>
+                            <span class="num-pill">ID: ${p.id}</span>
+                        </div>
+                        <div class="form-row">
+                            <label>Project Title</label>
+                            <input type="text" value="${p.title}" oninput="siteData['${key}'].projects[${idx}].title = this.value">
+                        </div>
+                        <div class="form-row">
+                            <label>Location</label>
+                            <input type="text" value="${p.location}" oninput="siteData['${key}'].projects[${idx}].location = this.value">
+                        </div>
+                        <div class="form-row">
+                            <label>Year</label>
+                            <input type="text" value="${p.year}" oninput="siteData['${key}'].projects[${idx}].year = this.value">
+                        </div>
+                        <div class="form-row">
+                            <label>Gallery (Click to Remove Image)</label>
+                            <div class="img-preview-container">
+                                ${p.gallery.map((img, i) => `
+                                    <div class="img-thumb-wrap" style="position:relative; display:inline-block;">
+                                        <img src="${img}" class="img-thumb" onclick="removeImage('${key}', ${idx}, ${i})">
+                                    </div>
+                                `).join('')}
+                                <div class="add-img-btn" onclick="addImage('${key}', ${idx})"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            html += `</div>`;
+            container.innerHTML = html;
+        }
+
+        function renderRentalsEditor() {
+            document.getElementById('current-view-title').innerText = 'Furniture Inventory';
+            const container = document.getElementById('editor-content');
+            
+            let listHtml = rentalData.products.map((p, idx) => `
+                <div class="card">
+                     <div class="card-header">
+                        <h4>Product: ${p.name}</h4>
+                        <button onclick="removeRental(${idx})" style="background: none; border: none; color: #666; cursor: pointer;"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                    <div class="form-row">
+                        <label>Name</label>
+                        <input type="text" value="${p.name}" oninput="rentalData.products[${idx}].name = this.value">
+                    </div>
+                     <div class="form-row">
+                        <label>Category</label>
+                        <select onchange="rentalData.products[${idx}].category = this.value" style="width:100%; background:var(--glass); border:1px solid var(--border); color:white; padding:10px; border-radius:8px;">
+                            ${['chairs', 'sofas', 'barstools', 'tables', 'office', 'devices', 'another items'].map(c => `<option value="${c}" ${p.category === c ? 'selected' : ''}>${c}</option>`).join('')}
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label>Image URL</label>
+                        <input type="text" value="${p.img}" oninput="rentalData.products[${idx}].img = this.value">
+                    </div>
+                    <img src="${p.img}" style="width: 100%; height: 120px; object-fit: cover; border-radius: 10px; margin-top: 10px; border: 1px solid var(--border);">
+                </div>
+            `).join('');
+
+            container.innerHTML = `
+                <div style="margin-bottom: 2rem;">
+                    <button class="btn-primary" style="width: auto; padding: 10px 24px;" onclick="addRental()">+ Add New Product</button>
+                </div>
+                <div class="section-grid">${listHtml}</div>
+            `;
+        }
+
+        // --- SUB-EDITING LOGIC ---
+        function removeImage(section, pIdx, iIdx) {
+            if(confirm("Remove this image?")) {
+                siteData[section].projects[pIdx].gallery.splice(iIdx, 1);
+                renderServiceEditor(section);
+            }
+        }
+
+        function addImage(section, pIdx) {
+            const url = prompt("Enter Image URL:");
+            if(url) {
+                siteData[section].projects[pIdx].gallery.push(url);
+                renderServiceEditor(section);
+            }
+        }
+
+        function removeRental(idx) {
+            if(confirm("Delete this product?")) {
+                rentalData.products.splice(idx, 1);
+                renderRentalsEditor();
+            }
+        }
+
+        function addRental() {
+            const name = prompt("Product Name?");
+            if(name) {
+                rentalData.products.unshift({
+                    id: 'new_' + Date.now(),
+                    name: name,
+                    category: 'chairs',
+                    availability: 'available',
+                    img: 'https://images.unsplash.com/photo-1592078615290-033ee584e267?w=800',
+                    tags: []
+                });
+                renderRentalsEditor();
+            }
+        }
+
+        // --- GITHUB SYNC LOGIC ---
+
+        async function saveChanges() {
+            if (!githubToken) {
+                alert("Please click the 'No API Token' box to connect to GitHub first.");
+                return;
+            }
+
+            const btn = document.querySelector('.btn-save');
+            const originalContent = btn.innerHTML;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Committing...';
+            btn.disabled = true;
+
+            try {
+                // Determine which file to update based on current view or just do all
+                await commitFile('data.json', siteData);
+                await commitFile('data/rentals.json', rentalData);
+                
+                showToast("All changes pushed to live site!", "success");
+            } catch (err) {
+                console.error(err);
+                showToast("Sync Failed: " + err.message, "error");
+            } finally {
+                btn.innerHTML = originalContent;
+                btn.disabled = false;
+            }
+        }
+
+        async function commitFile(path, data) {
+            // 1. Get current file SHA
+            const getRes = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}`, {
+                headers: { 'Authorization': `token ${githubToken}` }
+            });
+            const fileMeta = await getRes.json();
+            
+            // 2. Commit Update
+            const putRes = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}`, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `token ${githubToken}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    message: `CMS Update: ${new Date().toLocaleString()}`,
+                    content: btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 4)))),
+                    sha: fileMeta.sha
+                })
+            });
+
+            if (!putRes.ok) throw new Error(`GitHub Error: ${putRes.statusText}`);
+        }
+
+        function showToast(msg, type = 'success') {
+            const t = document.getElementById('status-toast');
+            t.innerText = msg;
+            t.style.borderLeft = `5px solid ${type === 'success' ? '#4CAF50' : '#E31E24'}`;
+            t.style.display = 'block';
+            t.style.background = '#1a1a1a';
+            t.style.color = '#fff';
+            t.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)';
+            setTimeout(() => { t.style.display = 'none'; }, 4000);
+        }
+
+    </script>
+</body>
+</html>
+</body>
+</html>
