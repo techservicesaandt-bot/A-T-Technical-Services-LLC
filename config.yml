@@ -105,10 +105,6 @@ collections:
 
   - name: "rentals"
     label: "Furniture Rentals"
-    folder: "data"
-    extension: "json"
-    format: "json"
-    create: true
     editor:
       preview: false
     files:
