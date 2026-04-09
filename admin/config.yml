@@ -129,4 +129,3 @@ collections:
               - { label: "Availability", name: "availability", widget: "select", options: ["available", "limited", "out_of_stock"] }
               - { label: "Image", name: "img", widget: "image" }
               - { label: "Tags", name: "tags", widget: "list", field: { label: "Tag", name: "tag", widget: "string" } }
-
