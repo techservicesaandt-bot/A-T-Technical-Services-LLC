@@ -1959,3 +1959,14 @@ body.light-mode .svc-tile-overlay h3 {
     .fb-clock { display: none; } /* Hide clock on mobile to save space */
 }
 
+
+/* SERVICES NAV ARROWS */
+.svc-nav-btns { display: none !important; }
+@media (max-width: 768px) { .svc-nav-btns { display: flex !important; } }
+
+/* FLOATING BAR REFINEMENTS */
+.fb-inner { padding: 0.8rem 2.5rem !important; min-width: 450px !important; background: rgba(0, 0, 0, 0.85) !important; border-color: rgba(255, 255, 255, 0.15) !important; color: #fff !important; }
+.fb-link { color: #fff !important; font-size: 0.9rem !important; }
+.fb-clock { border-left: 1px solid rgba(255, 255, 255, 0.1) !important; color: #fff !important; }
+.fb-divider { background: rgba(255, 255, 255, 0.2) !important; }
+@media (max-width: 768px) { .fb-inner { min-width: auto !important; width: 92vw !important; padding: 0.6rem 1.2rem !important; } }
