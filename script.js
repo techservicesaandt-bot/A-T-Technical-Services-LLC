@@ -376,6 +376,65 @@
     }
 
     // ============================================================
+    // 10. HERO WELCOME ANIMATION (REFINED FADE CYCLE)
+    // ============================================================
+    function initWelcomeAnimation() {
+        if (!heroIntro || !welcomeText) return;
+        const textWrap = document.querySelector('.intro-text-wrap');
+        const logoWrap = document.querySelector('.intro-logo-wrap');
+
+        const languages = [
+            { text: 'Welcome', lang: 'en' },
+            { text: 'Bienvenido', lang: 'es' },
+            { text: 'Velkommen', lang: 'da' },
+            { text: 'Witamy', lang: 'pl' },
+            { text: 'नमस्ते', lang: 'hi' },
+            { text: 'Bienvenue', lang: 'fr' },
+            { text: 'أهلاً بك', lang: 'ar' },
+            { text: 'Willkommen', lang: 'de' }
+        ];
+
+        let index = 0;
+
+        async function cycle() {
+            // 1. Show Text
+            const current = languages[index];
+            welcomeText.textContent = current.text;
+            welcomeText.dir = current.lang === 'ar' ? 'rtl' : 'ltr';
+            
+            textWrap.classList.add('active');
+            logoWrap.classList.remove('active');
+
+            // Wait 2s (still)
+            await new Promise(r => setTimeout(r, 2000));
+
+            // Fade Out
+            textWrap.classList.remove('active');
+
+            // Wait 0.3s (blank)
+            await new Promise(r => setTimeout(r, 300) );
+
+            // 2. Show Logo
+            logoWrap.classList.add('active');
+
+            // Wait 2s (still)
+            await new Promise(r => setTimeout(r, 2000));
+
+            // Fade Out
+            logoWrap.classList.remove('active');
+
+            // Wait 0.3s (blank)
+            await new Promise(r => setTimeout(r, 300));
+
+            // Move to next language
+            index = (index + 1) % languages.length;
+            cycle();
+        }
+
+        cycle();
+    }
+
+    // ============================================================
     // 12. SERVICES SCROLL (MOBILE ARROWS)
     // ============================================================
     function initServicesScroll() {
@@ -396,25 +455,7 @@
         });
     }
 
-    // ============================================================
-    // 13. PARALLAX EFFECT
-    // ============================================================
-    function initParallax() {
-        const parallaxEls = document.querySelectorAll('[data-parallax]');
-        if (parallaxEls.length === 0) return;
-
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            
-            parallaxEls.forEach(el => {
-                const speed = parseFloat(el.getAttribute('data-parallax')) || 0.1;
-                const offset = scrolled * speed;
-                el.style.transform = `translateY(${offset}px)`;
-            });
-        });
-    }
-
-    initParallax();
+    initWelcomeAnimation();
     initServicesScroll();
     initFloatingBar();
     initGlobalSettings();

@@ -110,15 +110,18 @@
         <div class="hero-side-text" aria-hidden="true">DESIGN · PRODUCE · EXECUTE</div>
 
         <!-- Main copy — bottom left -->
-        <div class="hero-copy" data-reveal data-parallax="0.15">
+        <div class="hero-copy" data-reveal>
             <div class="hero-badge">
                 <span class="badge-dot"></span>
                 Dubai to the World
             </div>
             <!-- Removed overlapping hero text for mobile optimization -->
-            <div class="intro-content">
+            <div class="hero-intro" id="heroIntro">
                 <div class="intro-text-wrap">
-                    <h2 id="welcomeText" class="welcome-txt">Welcome</h2>
+                    <h1 id="welcomeText">Welcome</h1>
+                </div>
+                <div class="intro-logo-wrap">
+                    <img src="/triangle.svg" alt="A&T Logo" id="welcomeLogo">
                 </div>
             </div>
             <p class="hero-desc">
@@ -210,7 +213,7 @@
     <!-- ========== SERVICES ========== -->
     <section class="services-section" id="services">
         <div class="wrap">
-            <div class="svc-header" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;" data-parallax="0.05">
+            <div class="svc-header" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
                 <div class="sec-label">Our Services</div>
                 <!-- Navigation Buttons (Mobile Focused) -->
                 <div class="svc-nav-btns" style="display: flex; gap: 10px;">
@@ -387,7 +390,7 @@
 
     <!-- ========== YOUTUBE RECENTS ========== -->
     <section class="youtube-section" id="youtube">
-        <div class="wrap" data-reveal data-parallax="0.08">
+        <div class="wrap" data-reveal>
             <div class="sec-label"><span></span> Stream &amp; Learn</div>
             <h2>Our YouTube Recents</h2>
             <p class="sec-subtitle">Step behind the scenes and see exactly how we design, produce, and execute world-class environments across Dubai.</p>
@@ -410,7 +413,7 @@
 
     <!-- ========== TEAM SECTION ========== -->
     <section class="team-section" id="team" style="padding: 10rem 0; background: var(--bg2);">
-        <div class="wrap" style="text-align: center;" data-parallax="0.1">
+        <div class="wrap" style="text-align: center;">
             <div class="sec-head" data-reveal>
                 <div class="sec-label" style="justify-content: center;"><span></span> Our Team</div>
                 <h2 style="font-size: clamp(2.2rem, 4.5vw, 3.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 2rem;">The Force Behind<br>the Execution</h2>
