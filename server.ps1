@@ -8,6 +8,46 @@ while ($listener.IsListening) {
     $req  = $ctx.Request
     $res  = $ctx.Response
     $path = $req.Url.LocalPath
+
+    # API HANDLING: SAVE DATA
+    if ($req.HttpMethod -eq 'POST' -and $path -eq '/api/save') {
+        $reader = [System.IO.StreamReader]::new($req.InputStream)
+        $body = $reader.ReadToEnd()
+        $json = $body | ConvertFrom-Json
+        
+        $target = Join-Path $root ($json.file)
+        # Ensure directory exists
+        $dir = Split-Path $target
+        if (!(Test-Path $dir)) { New-Item -ItemType Directory -Path $dir > $null }
+        
+        $json.data | ConvertTo-Json -Depth 100 | Out-File -FilePath $target -Encoding utf8
+        
+        $res.StatusCode = 200
+        $res.OutputStream.Close()
+        continue
+    }
+
+    # API HANDLING: UPLOAD IMAGE
+    if ($req.HttpMethod -eq 'POST' -and $path -eq '/api/upload') {
+        $reader = [System.IO.StreamReader]::new($req.InputStream)
+        $body = $reader.ReadToEnd()
+        $json = $body | ConvertFrom-Json
+        
+        $filename = $json.filename
+        $base64 = $json.base64.Split(',')[-1]
+        $bytes = [System.Convert]::FromBase64String($base64)
+        
+        $target = Join-Path $root "assets\uploads\$filename"
+        $dir = Split-Path $target
+        if (!(Test-Path $dir)) { New-Item -ItemType Directory -Path $dir > $null }
+        
+        [System.IO.File]::WriteAllBytes($target, $bytes)
+        
+        $res.StatusCode = 200
+        $res.OutputStream.Close()
+        continue
+    }
+
     if ($path -eq '/') { $path = '/index.html' }
     $file = Join-Path $root $path.TrimStart('/')
     if (Test-Path $file -PathType Leaf) {

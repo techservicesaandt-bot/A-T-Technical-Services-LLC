@@ -1,4 +1,4 @@
-{
+﻿{
     "events":  {
                    "title":  "Events",
                    "tagline":  "Environments That Move People",
@@ -6,108 +6,127 @@
                    "icon":  "fa-calendar-star",
                    "projects":  [
                                     {
+                                        "id":  "new-1775899129829",
+                                        "title":  "NNN Product Launch",
+                                        "location":  "Dubai, UAE",
+                                        "year":  "2026",
+                                        "gallery":  [
+                                                        "assets/uploads/img_1775899267512_540A7670.JPG",
+                                                        "assets/uploads/img_1775899274263_540A7683.JPG",
+                                                        "assets/uploads/img_1775899280564_540A7705.JPG",
+                                                        "assets/uploads/img_1775899286650_540A7788.JPG",
+                                                        "assets/uploads/img_1775899295255_A39A6995.JPG",
+                                                        "assets/uploads/img_1775899302970_A39A6998.JPG",
+                                                        "assets/uploads/img_1775899311106_A39A7009.JPG",
+                                                        "assets/uploads/img_1775899319629_A39A7011.JPG",
+                                                        "assets/uploads/img_1775899333795_A39A7132.JPG",
+                                                        "assets/uploads/img_1775899348008_IMG_7581.JPG",
+                                                        "assets/uploads/img_1775899358124_IMG_7714.JPG",
+                                                        "assets/uploads/img_1775899369712_IMG_7923.JPG"
+                                                    ]
+                                    },
+                                    {
                                         "id":  "ev1",
-                                        "title":  "Global Brand Summit",
+                                        "title":  "ADCAN - Product Launch",
                                         "category":  "Corporate Event",
                                         "year":  "2024",
-                                        "location":  "Dubai World Trade Centre",
+                                        "location":  "Dubai, UAE",
                                         "description":  "A full-scale corporate summit environment for a Fortune 500 client. Custom-built stage, branded environments, large-format graphics and on-site execution for 3,000 attendees.",
                                         "thumbnail":  "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=85",
                                         "gallery":  [
-                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=85",
-                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                        "assets/uploads/img_1775898257882_Screenshot_2023-03-12_at_1.59.23_pm.png",
+                                                        "assets/uploads/img_1775898263030_540A0832.jpg",
+                                                        "assets/uploads/img_1775898267898_540A0147.jpg",
+                                                        "assets/uploads/img_1775898272944_540A0084.jpg",
+                                                        "assets/uploads/img_1775898281744_540A0036.jpg",
+                                                        "assets/uploads/img_1775898291281_540A0031.jpg",
+                                                        "assets/uploads/img_1775898299129_540A0016.jpg",
+                                                        "assets/uploads/img_1775898306276_540A0002.jpg",
+                                                        "assets/uploads/img_1775898316054_540A0061.jpg"
                                                     ]
                                     },
                                     {
                                         "id":  "ev2",
-                                        "title":  "Tech Activation â€“ GITEX 2024",
+                                        "title":  "Ferring Conference",
                                         "category":  "Activation",
                                         "year":  "2024",
                                         "location":  "Dubai, UAE",
                                         "description":  "Interactive brand activation spanning 800sqm with immersive LED zones, custom furniture pods and full branding production.",
                                         "thumbnail":  "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1400\u0026q=85",
                                         "gallery":  [
-                                                        "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1400\u0026q=85",
-                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                        "assets/uploads/img_1775898393169_ES2A0017.JPG",
+                                                        "assets/uploads/img_1775898399772_ES2A0029.JPG",
+                                                        "assets/uploads/img_1775898404299_ES2A0032.JPG",
+                                                        "assets/uploads/img_1775898412312_ES2A0039.JPG",
+                                                        "assets/uploads/img_1775898418567_ES2A0055.JPG",
+                                                        "assets/uploads/img_1775898427818_ES2A0103.JPG",
+                                                        "assets/uploads/img_1775898436843_ES2A9919.JPG",
+                                                        "assets/uploads/img_1775898444560_ES2A9924.JPG"
                                                     ]
                                     },
                                     {
                                         "id":  "ev3",
-                                        "title":  "Awards Gala â€“ Hospitality Sector",
+                                        "title":  "FIFA World Cup 2022 Officiall Hosting Event",
                                         "category":  "Gala Event",
                                         "year":  "2024",
-                                        "location":  "Atlantis The Palm, Dubai",
+                                        "location":  "Dubai, UAE",
                                         "description":  "Premium awards night environment including stage design, branded backdrops, tabletop branding and full event infrastructure for 600 guests.",
                                         "thumbnail":  "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=85",
                                         "gallery":  [
-                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=85",
-                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                        "assets/uploads/img_1775898573271_A39A3738.JPG",
+                                                        "assets/uploads/img_1775898579179_A39A3739.JPG",
+                                                        "assets/uploads/img_1775898590032_A39A3746.JPG",
+                                                        "assets/uploads/img_1775898597591_A39A3752.JPG",
+                                                        "assets/uploads/img_1775898608752_A39A3758.JPG",
+                                                        "assets/uploads/img_1775898621060_A39A3761.JPG",
+                                                        "assets/uploads/img_1775898630917_A39A3766.JPG",
+                                                        "assets/uploads/img_1775898649533_A39A3790.JPG",
+                                                        "assets/uploads/img_1775898660655_A39A3832.JPG",
+                                                        "assets/uploads/img_1775898680932_A39A3916_copy.jpg"
                                                     ]
                                     },
                                     {
                                         "id":  "ev4",
-                                        "title":  "Annual Product Launch",
+                                        "title":  "Hikma Product Launch",
                                         "category":  "Product Launch",
                                         "year":  "2023",
-                                        "location":  "Abu Dhabi, UAE",
+                                        "location":  "Dubai, UAE",
                                         "description":  "End-to-end product reveal environment including custom reveal structure, lighting concept, branded collateral and logistics management.",
                                         "thumbnail":  "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=85",
                                         "gallery":  [
-                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=85",
-                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                        "assets/uploads/img_1775898745641_ES2A0589.JPG",
+                                                        "assets/uploads/img_1775898754811_ES2A0607.JPG",
+                                                        "assets/uploads/img_1775898764815_ES2A0615.JPG",
+                                                        "assets/uploads/img_1775898780802_ES2A0626.JPG",
+                                                        "assets/uploads/img_1775898797504_ES2A0756.JPG",
+                                                        "assets/uploads/img_1775898809010_ES2A1073.JPG"
                                                     ]
                                     },
                                     {
                                         "id":  "ev5",
-                                        "title":  "Government Forum Setup",
+                                        "title":  "Second Emirates Community Forum",
                                         "category":  "Forum",
                                         "year":  "2023",
                                         "location":  "Dubai, UAE",
                                         "description":  "Complete forum infrastructure including 12 branded seminar booths, signage systems, large-format printing and branded F\u0026B station.",
                                         "thumbnail":  "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=85",
                                         "gallery":  [
-                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=85",
-                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                        "assets/uploads/img_1775899004298_1.jpeg",
+                                                        "assets/uploads/img_1775899010376_2.jpeg",
+                                                        "assets/uploads/img_1775899016651_3.jpeg",
+                                                        "assets/uploads/img_1775899022902_4.jpeg",
+                                                        "assets/uploads/img_1775899032344_5.jpeg",
+                                                        "assets/uploads/img_1775899038278_6.jpeg",
+                                                        "assets/uploads/img_1775899044354_7.jpeg",
+                                                        "assets/uploads/img_1775899050796_8.jpeg",
+                                                        "assets/uploads/img_1775899057789_9.jpeg",
+                                                        "assets/uploads/img_1775899065810_10.jpeg",
+                                                        "assets/uploads/img_1775899074944_11.jpeg",
+                                                        "assets/uploads/img_1775899084041_12.jpeg",
+                                                        "assets/uploads/img_1775899095522_13.jpeg",
+                                                        "assets/uploads/img_1775899103033_14.jpeg",
+                                                        "assets/uploads/img_1775899108941_15.jpeg",
+                                                        "assets/uploads/img_1775899118693_16.jpeg"
                                                     ]
                                     }
                                 ]
@@ -119,87 +138,102 @@
                         "icon":  "fa-building-columns",
                         "projects":  [
                                          {
+                                             "id":  "new-1775899786673",
+                                             "title":  "New Project",
+                                             "location":  "Dubai",
+                                             "year":  "2026",
+                                             "gallery":  [
+
+                                                         ]
+                                         },
+                                         {
+                                             "id":  "new-1775899783154",
+                                             "title":  "New Project",
+                                             "location":  "Dubai",
+                                             "year":  "2026",
+                                             "gallery":  [
+
+                                                         ]
+                                         },
+                                         {
+                                             "id":  "new-1775899779282",
+                                             "title":  "New Project",
+                                             "location":  "Dubai",
+                                             "year":  "2026",
+                                             "gallery":  [
+
+                                                         ]
+                                         },
+                                         {
+                                             "id":  "new-1775899776911",
+                                             "title":  "New Project",
+                                             "location":  "Dubai",
+                                             "year":  "2026",
+                                             "gallery":  [
+
+                                                         ]
+                                         },
+                                         {
                                              "id":  "ex1",
-                                             "title":  "European Auto Expo Stand",
+                                             "title":  "Crystal Asfour",
                                              "category":  "Exhibition Stand",
                                              "year":  "2024",
-                                             "location":  "Frankfurt, Germany",
+                                             "location":  "Dubai, UAE",
                                              "description":  "A double-deck 600sqm exhibition stand for a leading automotive brand. Custom steel structure, acrylic elements, digital displays and branded furniture â€” shipped from Dubai and installed on-site.",
                                              "thumbnail":  "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=85",
                                              "gallery":  [
-                                                             "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=85",
-                                                             "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                             "assets/uploads/img_1775899473108_540A0032.JPG",
+                                                             "assets/uploads/img_1775899476908_540A0037.JPG",
+                                                             "assets/uploads/img_1775899480904_540A0044.JPG",
+                                                             "assets/uploads/img_1775899485603_540A0048.JPG",
+                                                             "assets/uploads/img_1775899491113_540A0062.JPG",
+                                                             "assets/uploads/img_1775899500317_540A0064.JPG",
+                                                             "assets/uploads/img_1775899510328_540A0078.JPG",
+                                                             "assets/uploads/img_1775899519443_540A0100.JPG",
+                                                             "assets/uploads/img_1775899526458_540A0109.JPG"
                                                          ]
                                          },
                                          {
                                              "id":  "ex2",
-                                             "title":  "Retail Brand â€” Dubai Expo",
+                                             "title":  "HNH",
                                              "category":  "Expo Pavilion",
                                              "year":  "2023",
-                                             "location":  "Expo City Dubai",
+                                             "location":  "Dubai, UAE",
                                              "description":  "1,200sqm country pavilion featuring environmental branding, custom-built display structures, lightboxes and visitor experience zones.",
                                              "thumbnail":  "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=85",
                                              "gallery":  [
-                                                             "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=85",
-                                                             "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                             "assets/uploads/img_1775899573495_A39A8121.JPG",
+                                                             "assets/uploads/img_1775899586736_A39A8127.JPG",
+                                                             "assets/uploads/img_1775899592457_A39A8135.JPG",
+                                                             "assets/uploads/img_1775899599943_A39A8141.JPG"
                                                          ]
                                          },
                                          {
                                              "id":  "ex3",
-                                             "title":  "Real Estate Developer Stand",
+                                             "title":  "MPC",
                                              "category":  "Exhibition Stand",
                                              "year":  "2024",
-                                             "location":  "Cityscape Dubai",
+                                             "location":  "Dubai, UAE",
                                              "description":  "Premium 300sqm stand featuring a central branded pylon, scale model display, lounge zones, custom millwork and LED feature walls.",
                                              "thumbnail":  "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=85",
                                              "gallery":  [
-                                                             "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=85",
-                                                             "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                             "assets/uploads/img_1775899663208_MPC___DUPHAT__2_.jpeg",
+                                                             "assets/uploads/img_1775899684524_mpc___DUPHAT.jpeg",
+                                                             "assets/uploads/img_1775899689482_MPC__DUPHAT.jpeg"
                                                          ]
                                          },
                                          {
                                              "id":  "ex4",
-                                             "title":  "Tech Brand â€” CES Las Vegas",
+                                             "title":  "Pharmatrade",
                                              "category":  "Expo Stand",
                                              "year":  "2024",
-                                             "location":  "Las Vegas, USA",
+                                             "location":  "Dubai, UAE",
                                              "description":  "Portable modular stand system designed for repeated use across global shows. Designed, fabricated and shipped from Dubai with on-site assembly guide.",
                                              "thumbnail":  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=85",
                                              "gallery":  [
-                                                             "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=85",
-                                                             "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
-                                                             "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                             "assets/uploads/img_1775899737481_PHARMATRADE__DUPHAT.jpeg",
+                                                             "assets/uploads/img_1775899762937_PHARMATRADE_DUPHAT__2_.jpeg",
+                                                             "assets/uploads/img_1775899768890_PHARMATRADE_DUPHAT.jpeg"
                                                          ]
                                          }
                                      ]
@@ -211,87 +245,130 @@
                    "icon":  "fa-ruler-combined",
                    "projects":  [
                                     {
+                                        "id":  "new-1775900084310",
+                                        "title":  "LULU Hypermarket",
+                                        "location":  "Sharjah, UAE",
+                                        "year":  "2026",
+                                        "gallery":  [
+                                                        "assets/uploads/img_1775900129938_A39A9747.jpg",
+                                                        "assets/uploads/img_1775900135717_A39A9757.jpg",
+                                                        "assets/uploads/img_1775900140600_A39A9764.jpg",
+                                                        "assets/uploads/img_1775900145683_A39A9768.jpg",
+                                                        "assets/uploads/img_1775900156024_A39A9776.jpg",
+                                                        "assets/uploads/img_1775900168311_A39A9787.jpg",
+                                                        "assets/uploads/img_1775900196180_A39A9794.jpg",
+                                                        "assets/uploads/img_1775900209263_A39A9796.jpg",
+                                                        "assets/uploads/img_1775900221592_A39A9799.jpg",
+                                                        "assets/uploads/img_1775900236550_A39A9806.jpg",
+                                                        "assets/uploads/img_1775900248341_A39A9812.jpg"
+                                                    ]
+                                    },
+                                    {
+                                        "id":  "new-1775900083748",
+                                        "title":  "DK\u0027s Studio \u0026 Podcast Setup",
+                                        "location":  "Dubai",
+                                        "year":  "2026",
+                                        "gallery":  [
+                                                        "assets/uploads/img_1775901015453_WhatsApp_Image_2026-03-20_at_1.35.24_AM__5_.jpeg",
+                                                        "assets/uploads/img_1775901089786_WhatsApp_Image_2026-03-20_at_1.35.24_AM__4_.jpeg",
+                                                        "assets/uploads/img_1775901225960_WhatsApp_Image_2026-03-20_at_1.35.24_AM__1_.jpeg",
+                                                        "assets/uploads/img_1775901252368_WhatsApp_Image_2026-03-20_at_1.35.23_AM.jpeg",
+                                                        "assets/uploads/img_1775901264419_WhatsApp_Image_2026-03-20_at_1.35.24_AM__3_.jpeg",
+                                                        "assets/uploads/img_1775901278232_WhatsApp_Image_2026-03-20_at_1.35.24_AM.jpeg"
+                                                    ]
+                                    },
+                                    {
                                         "id":  "fo1",
-                                        "title":  "Corporate HQ â€” Financial Sector",
+                                        "title":  "MBC Ghaneely BilJaw 2022",
                                         "category":  "Office Fitout",
                                         "year":  "2024",
-                                        "location":  "DIFC, Dubai",
+                                        "location":  "Dubai, UAE",
                                         "description":  "Full fit-out of a 2,400sqm corporate headquarters. Custom millwork reception, partition systems, branded breakout zones, signage and branded environmental graphics.",
                                         "thumbnail":  "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1400\u0026q=85",
                                         "gallery":  [
-                                                        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1400\u0026q=85",
-                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                        "assets/uploads/img_1775900262488_1_PLANE.jpeg",
+                                                        "assets/uploads/img_1775900270014_2_PLANE.jpeg",
+                                                        "assets/uploads/img_1775900277644_3_PLANE.jpeg",
+                                                        "assets/uploads/img_1775900287785_4_PLANE.jpeg",
+                                                        "assets/uploads/img_1775900300116_5PLANE.jpeg",
+                                                        "assets/uploads/img_1775900313162_8_PLANE.jpeg",
+                                                        "assets/uploads/img_1775900326437_WhatsApp_Image_2026-03-06_at_12.37.04_AM.jpeg"
                                                     ]
                                     },
                                     {
                                         "id":  "fo2",
-                                        "title":  "Luxury Retail Store",
+                                        "title":  "MBC Studio Setup",
                                         "category":  "Retail Fitout",
                                         "year":  "2024",
-                                        "location":  "Dubai Mall",
+                                        "location":  "Dubai, UAE",
                                         "description":  "Premium retail store fitout featuring custom-crafted display units, acrylic showcase elements, branded wall graphics and precision carpentry.",
                                         "thumbnail":  "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400\u0026q=85",
                                         "gallery":  [
-                                                        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1400\u0026q=85",
-                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                        "assets/uploads/img_1775900360321_IMG20201117014400.jpg",
+                                                        "assets/uploads/img_1775900367627_IMG20201117014516.jpg",
+                                                        "assets/uploads/img_1775900374464_IMG20201117014623.jpg",
+                                                        "assets/uploads/img_1775900382659_IMG20201117014634.jpg",
+                                                        "assets/uploads/img_1775900392095_IMG20210114192631.jpg",
+                                                        "assets/uploads/img_1775900401132_IMG20210114193105.jpg",
+                                                        "assets/uploads/img_1775900419895_IMG20210114193148.jpg",
+                                                        "assets/uploads/img_1775900432587_IMG20210114193418.jpg",
+                                                        "assets/uploads/img_1775900445733_IMG20210114204940.jpg",
+                                                        "assets/uploads/img_1775900452173_WhatsApp_Image_2022-05-11_at_3.51.46_PM__1_.jpeg",
+                                                        "assets/uploads/img_1775900463480_WhatsApp_Image_2023-01-12_at_1.06.06_PM.jpeg",
+                                                        "assets/uploads/img_1775900479804_WhatsApp_Image_2023-01-12_at_1.06.07_PM__1_.jpeg",
+                                                        "assets/uploads/img_1775900486733_WhatsApp_Image_2023-01-12_at_1.06.07_PM__2_.jpeg",
+                                                        "assets/uploads/img_1775900495684_WhatsApp_Image_2023-01-12_at_1.06.07_PM__3_.jpeg",
+                                                        "assets/uploads/img_1775900504800_WhatsApp_Image_2023-01-12_at_1.06.07_PM.jpeg",
+                                                        "assets/uploads/img_1775900516685_WhatsApp_Image_2023-01-12_at_1.06.08_PM__1_.jpeg",
+                                                        "assets/uploads/img_1775900530562_WhatsApp_Image_2023-01-12_at_1.06.08_PM__3_.jpeg",
+                                                        "assets/uploads/img_1775900550642_WhatsApp_Image_2023-01-12_at_1.06.09_PM__2_.jpeg",
+                                                        "assets/uploads/img_1775900560558_WhatsApp_Image_2023-01-12_at_1.06.09_PM__3_.jpeg",
+                                                        "assets/uploads/img_1775900571244_WhatsApp_Image_2023-01-12_at_1.06.09_PM__4_.jpeg",
+                                                        "assets/uploads/img_1775900579313_WhatsApp_Image_2023-01-12_at_1.06.09_PM__5_.jpeg",
+                                                        "assets/uploads/img_1775900585679_WhatsApp_Image_2023-01-12_at_1.06.09_PM__6_.jpeg",
+                                                        "assets/uploads/img_1775900602822_WhatsApp_Image_2023-01-12_at_1.06.10_PM.jpeg",
+                                                        "assets/uploads/img_1775900610669_WhatsApp_Image_2023-01-12_at_1.06.11_PM.jpeg"
                                                     ]
                                     },
                                     {
                                         "id":  "fo3",
-                                        "title":  "Hotel Lobby Renovation",
+                                        "title":  "Tayba Gourmet",
                                         "category":  "Hospitality Fitout",
                                         "year":  "2023",
-                                        "location":  "JBR, Dubai",
+                                        "location":  "Dubai, UAE",
                                         "description":  "Complete lobby refresh including custom reception desk, branded feature wall, custom furniture and environmental signage â€” delivered in 3 weeks.",
                                         "thumbnail":  "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1400\u0026q=85",
                                         "gallery":  [
-                                                        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1400\u0026q=85",
-                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                        "assets/uploads/img_1775900636501_A39A4422.JPG",
+                                                        "assets/uploads/img_1775900640835_A39A4432.JPG",
+                                                        "assets/uploads/img_1775900647001_A39A4434.JPG",
+                                                        "assets/uploads/img_1775900657440_A39A4437.JPG",
+                                                        "assets/uploads/img_1775900665258_A39A4438.JPG",
+                                                        "assets/uploads/img_1775900698443_A39A4439.JPG",
+                                                        "assets/uploads/img_1775900711866_A39A4456.JPG",
+                                                        "assets/uploads/img_1775900722093_A39A4484.JPG"
                                                     ]
                                     },
                                     {
                                         "id":  "fo4",
-                                        "title":  "Food \u0026 Beverage Brand Expansion",
+                                        "title":  "Blooms AVA Restaurant",
                                         "category":  "F\u0026B Fitout",
                                         "year":  "2023",
-                                        "location":  "Multiple Locations, UAE",
+                                        "location":  "Dubai, UAE",
                                         "description":  "Rollout fitout for a regional F\u0026B brand across 8 new locations â€” standardized design package delivered with speed and brand consistency across all sites.",
                                         "thumbnail":  "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400\u0026q=85",
                                         "gallery":  [
-                                                        "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400\u0026q=85",
-                                                        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400\u0026q=80",
-                                                        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1400\u0026q=80"
+                                                        "assets/uploads/img_1775900758218_A39A1782.jpg",
+                                                        "assets/uploads/img_1775900795161_A39A1757.jpg",
+                                                        "assets/uploads/img_1775900808754_A39A1760.jpg",
+                                                        "assets/uploads/img_1775900818768_A39A1763.jpg",
+                                                        "assets/uploads/img_1775900837122_A39A1769.jpg",
+                                                        "assets/uploads/img_1775900855294_A39A1794.jpg",
+                                                        "assets/uploads/img_1775900875004_A39A1797.jpg",
+                                                        "assets/uploads/img_1775900897128_A39A1815.jpg",
+                                                        "assets/uploads/img_1775900924422_A39A1825.jpg",
+                                                        "assets/uploads/img_1775900946821_A39A1845.jpg",
+                                                        "assets/uploads/img_1775900971171_A39A1846.jpg"
                                                     ]
                                     }
                                 ]
@@ -622,32 +699,32 @@
                                      }
                                  ]
                 },
-    "team": [
-        {
-            "name": "Team Member 1",
-            "position": "Director",
-            "bio": "Dedicated to providing world-class execution for every project.",
-            "img": "https://i.pravatar.cc/600?img=21"
-        },
-        {
-            "name": "Team Member 2",
-            "position": "Project Manager",
-            "bio": "Dedicated to providing world-class execution for every project.",
-            "img": "https://i.pravatar.cc/600?img=22"
-        },
-        {
-            "name": "Team Member 3",
-            "position": "Lead Designer",
-            "bio": "Dedicated to providing world-class execution for every project.",
-            "img": "https://i.pravatar.cc/600?img=23"
-        }
-    ],
-    "placeholders": {
-        "contact_name": "Your Name *",
-        "contact_email": "Official Email *",
-        "contact_company": "Company Name",
-        "contact_message": "Tell us about your project...",
-        "contact_submit": "Send Request"
-    },
-    "formspree_id": "xaqlzaez"
+    "team":  [
+                 {
+                     "name":  "Team Member 1",
+                     "position":  "Director",
+                     "bio":  "Dedicated to providing world-class execution for every project.",
+                     "img":  "https://i.pravatar.cc/600?img=21"
+                 },
+                 {
+                     "name":  "Team Member 2",
+                     "position":  "Project Manager",
+                     "bio":  "Dedicated to providing world-class execution for every project.",
+                     "img":  "https://i.pravatar.cc/600?img=22"
+                 },
+                 {
+                     "name":  "Team Member 3",
+                     "position":  "Lead Designer",
+                     "bio":  "Dedicated to providing world-class execution for every project.",
+                     "img":  "https://i.pravatar.cc/600?img=23"
+                 }
+             ],
+    "placeholders":  {
+                         "contact_name":  "Your Name *",
+                         "contact_email":  "Official Email *",
+                         "contact_company":  "Company Name",
+                         "contact_message":  "Tell us about your project...",
+                         "contact_submit":  "Send Request"
+                     },
+    "formspree_id":  "xaqlzaez"
 }

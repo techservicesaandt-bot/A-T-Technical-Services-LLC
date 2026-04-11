@@ -171,14 +171,17 @@
                 <div class="sec-label"><span></span> Our Team</div>
                 <h2>The Force Behind<br>the Execution</h2>
                 <p class="sec-subtitle">Meet the specialized professionals who bring world-class projects to life.</p>
-            </div>            <div class="team-grid" id="teamGrid">
-                <!-- 17 Team Cards -->
-                <script>
-                    (function() {
-                        const grid = document.getElementById('teamGrid');
-                        if (!grid) return;
-                        const positions = ["Director", "Project Manager", "Lead Designer", "Structural Engineer", "Production Head", "Logistics Manager", "Sales Manager", "Accountant"];
-                        for(let i=1; i<=17; i++) {
+            </div>            <div class="team-grid" id="teamGrid"></div>
+            <script>
+                (async function() {
+                    const grid = document.getElementById('teamGrid');
+                    if (!grid) return;
+                    try {
+                        const resp = await fetch('data.json');
+                        const data = await resp.json();
+                        const team = data.team || [];
+                        
+                        team.forEach((m, i) => {
                             const card = document.createElement('div');
                             card.className = 'team-card';
                             card.setAttribute('data-reveal', '');
@@ -186,21 +189,25 @@
                             card.innerHTML = `
                                 <div class="team-img-wrap">
                                     <i class="fa-solid fa-quote-left team-quote-lg"></i>
-                                    <img src="https://i.pravatar.cc/600?img=${i+30}" alt="Team Member ${i}" loading="lazy">
+                                    <img src="${m.img}" alt="${m.name}" loading="lazy">
                                 </div>
                                 <div class="team-info">
-                                    <h3>Team Member ${i}</h3>
-                                    <p class="position">${positions[i % positions.length]}</p>
+                                    <h3>${m.name}</h3>
+                                    <p class="position">${m.position}</p>
                                     <div class="team-bio">
-                                        Dedicated to providing world-class execution for every project.<i class="fa-solid fa-quote-right team-quote-sm"></i>
+                                        ${m.bio}<i class="fa-solid fa-quote-right team-quote-sm"></i>
                                     </div>
                                 </div>
                             `;
                             grid.appendChild(card);
+                        });
+                        // Initialize reveal for dynamic elements
+                        if (window.observer) {
+                           document.querySelectorAll('#teamGrid [data-reveal]').forEach(el => window.observer.observe(el));
                         }
-                    })();
-                </script>
-            </div>
+                    } catch (e) { console.error('Team load error:', e); }
+                })();
+            </script>
 
             <!-- Mobile Carousel Nav -->
             <div class="team-nav-mobile">

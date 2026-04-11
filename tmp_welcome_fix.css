@@ -1,0 +1,25 @@
+
+/* WELCOME ANIMATION FIX - SMALLER & HIDDEN LOGO TEXT */
+.hero-intro { 
+    height: 55px !important; 
+    margin-bottom: 1.5rem !important; 
+    z-index: 100;
+}
+.hero-intro h1 { 
+    font-size: 2.1rem !important; 
+    letter-spacing: -0.01em !important; 
+    line-height: 1 !important;
+}
+.intro-logo-wrap img { 
+    height: 70px !important; /* Slightly taller to allow clipping */
+    width: auto !important; 
+    object-fit: contain !important; 
+    object-position: top !important; 
+    clip-path: inset(0 0 45% 0) !important; /* HIDE BOTTOM TEXT */
+    margin-top: -5px !important;
+}
+@media (max-width: 768px) { 
+    .hero-intro { height: 40px !important; } 
+    .hero-intro h1 { font-size: 1.4rem !important; } 
+    .intro-logo-wrap img { height: 45px !important; } 
+}

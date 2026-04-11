@@ -1,0 +1,52 @@
+
+/* FIXED WELCOME ANIMATION - CLEAN TRIANGLE & FADE CYCLE */
+.hero-intro { 
+    height: 80px !important; 
+    margin-bottom: 2rem !important; 
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+/* Base style for both text and logo wraps */
+.intro-text-wrap, .intro-logo-wrap {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    opacity: 0; /* START HIDDEN */
+    visibility: hidden;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: translateY(5px);
+}
+
+/* Active state */
+.hero-intro .active {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+
+.hero-intro h1 { 
+    font-size: clamp(2rem, 5vw, 3.5rem) !important; 
+    color: #fff !important;
+    margin: 0 !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+}
+
+.intro-logo-wrap img { 
+    height: 65px !important; /* PERFECT FIT FOR TRIANGLE */
+    width: auto !important; 
+    object-fit: contain !important; 
+}
+
+@media (max-width: 768px) { 
+    .hero-intro { height: 60px !important; } 
+    .hero-intro h1 { font-size: 1.8rem !important; } 
+    .intro-logo-wrap img { height: 45px !important; } 
+}

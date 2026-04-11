@@ -236,25 +236,48 @@
     // 8. QUOTE FORM
     // ============================================================
     if (quoteForm) {
-        quoteForm.addEventListener('submit', e => {
+        quoteForm.addEventListener('submit', async e => {
             e.preventDefault();
             const btn = document.getElementById('submitBtn');
             const orig = btn.innerHTML;
 
+            // Get Formspree ID from data.json or settings
+            let formspreeId = "mldgjzda"; 
+            try {
+                const sResp = await fetch('data.json');
+                const sData = await sResp.json();
+                if (sData.formspree_id) formspreeId = sData.formspree_id;
+            } catch(e) {}
+
             btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
             btn.disabled = true;
 
-            setTimeout(() => {
-                btn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Sent to info@at-s.ae!';
-                btn.style.background = '#16a34a';
+            const formData = new FormData(quoteForm);
+            
+            try {
+                const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
 
+                if (response.ok) {
+                    btn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Sent Successfully!';
+                    btn.style.background = '#16a34a';
+                    quoteForm.reset();
+                } else {
+                    throw new Error('Failed to send');
+                }
+            } catch (err) {
+                btn.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Error sending';
+                btn.style.background = '#dc2626';
+            } finally {
                 setTimeout(() => {
                     btn.innerHTML = orig;
                     btn.style.background = '';
                     btn.disabled = false;
-                    quoteForm.reset();
                 }, 4500);
-            }, 1800);
+            }
         });
     }
 
