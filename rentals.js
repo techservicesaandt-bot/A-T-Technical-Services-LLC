@@ -18,7 +18,7 @@
     // Initialization: Fetch dynamic data
     async function initRentals() {
         try {
-            const resp = await fetch('rentals.json');
+            const resp = await fetch(`rentals.json?t=${new Date().getTime()}`);
             if (!resp.ok) throw new Error('Failed to fetch rentals.json');
             PRODUCTS = await resp.json();
 

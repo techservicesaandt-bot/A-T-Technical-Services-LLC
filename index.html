@@ -424,7 +424,7 @@
                     const grid = document.getElementById('teamHomeGrid');
                     if (!grid) return;
                     try {
-                        const resp = await fetch('data.json');
+                        const resp = await fetch('data.json?t=' + new Date().getTime());
                         const data = await resp.json();
                         const team = data.team || [];
                         
@@ -534,7 +534,7 @@
                 <script>
                     (async function() {
                         try {
-                            const resp = await fetch('data.json');
+                            const resp = await fetch('data.json?t=' + new Date().getTime());
                             const data = await resp.json();
                             const p = data.placeholders || {};
                             if (p.contact_name) {
@@ -642,7 +642,7 @@
     <script>
         (async function() {
             try {
-                const resp = await fetch('data.json');
+                const resp = await fetch('data.json?t=' + new Date().getTime());
                 const data = await resp.json();
                 
                 // Hero Section

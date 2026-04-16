@@ -124,10 +124,10 @@
         // --- INITIALIZATION ---
         window.addEventListener('DOMContentLoaded', async () => {
             try {
-                const resp = await fetch('data.json');
+                const resp = await fetch('data.json?t=' + new Date().getTime());
                 siteData = await resp.json();
                 
-                const rResp = await fetch('rentals.json');
+                const rResp = await fetch('rentals.json?t=' + new Date().getTime());
                 rentalData = await rResp.json();
                 
                 document.getElementById('setup-overlay').style.display = 'none';
