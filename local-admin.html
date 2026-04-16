@@ -127,7 +127,7 @@
                 const resp = await fetch('data.json');
                 siteData = await resp.json();
                 
-                const rResp = await fetch('data/rentals.json');
+                const rResp = await fetch('rentals.json');
                 rentalData = await rResp.json();
                 
                 document.getElementById('setup-overlay').style.display = 'none';
@@ -187,27 +187,85 @@
 
         function renderHomepage(container) {
             document.getElementById('view-title').innerText = "Home Screen Content";
+            
+            // Ensure data structures exist to prevent errors
+            siteData.hero = siteData.hero || { title: "", side_text: "", badge_text: "", description: "", clients_stat: "", clients_text: "" };
+            siteData.youtube = siteData.youtube || { url: "" };
+            siteData.quote_stats = siteData.quote_stats || [
+                { number: "500+", label: "Satisfied Clients" },
+                { number: "12+", label: "Years Experience" },
+                { number: "40+", label: "Countries Served" }
+            ];
+            siteData.highlights = siteData.highlights || [
+                { label: "", title: "", description: "", img: "", points: ["","","",""] },
+                { label: "", title: "", description: "", img: "", points: ["","","",""] }
+            ];
+
+            let highlightsHtml = siteData.highlights.map((hl, idx) => `
+                <div class="card" style="margin-top: 1rem; border: 1px solid var(--border);">
+                    <h4 style="color:var(--accent); margin-bottom: 10px;">Highlight Block ${idx + 1}</h4>
+                    <div class="form-row"><label>Label</label><input type="text" value="${hl.label}" oninput="siteData.highlights[${idx}].label = this.value"></div>
+                    <div class="form-row"><label>Title (use &lt;br&gt; for line breaks)</label><input type="text" value="${hl.title}" oninput="siteData.highlights[${idx}].title = this.value"></div>
+                    <div class="form-row"><label>Description</label><textarea rows="3" oninput="siteData.highlights[${idx}].description = this.value">${hl.description}</textarea></div>
+                    <div class="form-row"><label>Image Photo</label>
+                        <div style="background: var(--glass); border-radius: 8px; padding: 10px; text-align: center;">
+                            <img src="${hl.img}" style="width:100%; max-height:150px; object-fit: contain; border-radius: 8px; margin-bottom: 10px;">
+                            <button class="btn-save" style="width:100%; background: #222; color:white; font-size: 0.75rem;" onclick="importHighlightImage(${idx})">REPLACE PHOTO</button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            let statsHtml = siteData.quote_stats.map((st, idx) => `
+                <div style="display:flex; gap: 10px; margin-bottom: 10px;">
+                    <input type="text" placeholder="Number (e.g. 500+)" value="${st.number}" style="width:30%" oninput="siteData.quote_stats[${idx}].number = this.value">
+                    <input type="text" placeholder="Label (e.g. Clients)" value="${st.label}" style="width:70%" oninput="siteData.quote_stats[${idx}].label = this.value">
+                </div>
+            `).join('');
+
             container.innerHTML = `
                 <div class="card">
-                    <h4>Hero Header</h4>
+                    <h4>Hero Section</h4>
                     <div class="form-row">
-                        <label>Hero Title</label>
+                        <label>Main Title</label>
                         <input type="text" value="${siteData.hero.title}" oninput="siteData.hero.title = this.value">
                     </div>
                     <div class="form-row">
-                        <label>Hero Tagline</label>
-                        <input type="text" value="${siteData.hero.tagline}" oninput="siteData.hero.tagline = this.value">
+                        <label>Red Badge Text</label>
+                        <input type="text" value="${siteData.hero.badge_text}" oninput="siteData.hero.badge_text = this.value">
+                    </div>
+                    <div class="form-row">
+                        <label>Side Vertical Text</label>
+                        <input type="text" value="${siteData.hero.side_text}" oninput="siteData.hero.side_text = this.value">
+                    </div>
+                    <div class="form-row">
+                        <label>Description</label>
+                        <textarea rows="3" oninput="siteData.hero.description = this.value">${siteData.hero.description}</textarea>
+                    </div>
+                    <div class="form-row" style="display:flex; gap:10px;">
+                        <div style="flex:1;"><label>Client Avatar Stat (e.g. 500+)</label><input type="text" value="${siteData.hero.clients_stat}" oninput="siteData.hero.clients_stat = this.value"></div>
+                        <div style="flex:2;"><label>Client Avatar Subtext</label><input type="text" value="${siteData.hero.clients_text}" oninput="siteData.hero.clients_text = this.value"></div>
                     </div>
                 </div>
+
                 <div class="card">
-                    <h4>Who We Are (About Section)</h4>
+                    <h4>Highlights Sections</h4>
+                    ${highlightsHtml}
+                </div>
+
+                <div class="card">
+                    <h4>YouTube Video</h4>
                     <div class="form-row">
-                        <label>Title</label>
-                        <input type="text" value="${siteData.about_snippet.title}" oninput="siteData.about_snippet.title = this.value">
+                        <label>YouTube Embed URL</label>
+                        <input type="text" value="${siteData.youtube.url}" oninput="siteData.youtube.url = this.value" placeholder="https://www.youtube.com/embed/...">
                     </div>
+                </div>
+
+                <div class="card">
+                    <h4>Quote Form Statistics</h4>
                     <div class="form-row">
-                        <label>Text Description</label>
-                        <textarea rows="5" oninput="siteData.about_snippet.text = this.value">${siteData.about_snippet.text}</textarea>
+                        <label>Statistics (Number | Label)</label>
+                        ${statsHtml}
                     </div>
                 </div>
             `;
@@ -477,6 +535,14 @@
             });
         }
 
+        function importHighlightImage(idx) {
+            uploadFile(path => {
+                siteData.highlights[idx].img = path;
+                renderEditor();
+                showStatus("Highlight image updated!");
+            });
+        }
+
         function importTeamPhoto(idx) {
             uploadFile(path => {
                 siteData.team[idx].img = path;
@@ -555,7 +621,7 @@
                 // Save rentals via server API
                 const s2 = await fetch('/api/save', {
                     method: 'POST',
-                    body: JSON.stringify({ file: 'data/rentals.json', data: rentalData })
+                    body: JSON.stringify({ file: 'rentals.json', data: rentalData })
                 });
 
                 if(s1.ok && s2.ok) {

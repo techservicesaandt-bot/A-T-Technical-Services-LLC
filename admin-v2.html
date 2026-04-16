@@ -472,7 +472,7 @@
                 const res = await fetch('data.json?t=' + Date.now());
                 siteData = await res.json();
 
-                const resRentals = await fetch('data/rentals.json?t=' + Date.now());
+                const resRentals = await fetch('rentals.json?t=' + Date.now());
                 rentalData = await resRentals.json();
 
                 renderSidebar();
@@ -724,7 +724,7 @@
             try {
                 // Determine which file to update based on current view or just do all
                 await commitFile('data.json', siteData);
-                await commitFile('data/rentals.json', rentalData);
+                await commitFile('rentals.json', rentalData);
                 
                 showToast("All changes pushed to live site!", "success");
             } catch (err) {

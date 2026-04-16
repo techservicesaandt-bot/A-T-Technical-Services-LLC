@@ -105,13 +105,13 @@
         </div>
 
         <!-- Decorative vertical text -->
-        <div class="hero-side-text" aria-hidden="true">DESIGN · PRODUCE · EXECUTE</div>
+        <div class="hero-side-text" aria-hidden="true" id="homeSideText">DESIGN · PRODUCE · EXECUTE</div>
 
         <!-- Main copy — bottom left -->
         <div class="hero-copy" data-reveal>
             <div class="hero-badge">
                 <span class="badge-dot"></span>
-                Dubai to the World
+                <span id="homeBadgeText">Dubai to the World</span>
             </div>
             <!-- Removed overlapping hero text for mobile optimization -->
             <div class="hero-intro" id="heroIntro">
@@ -122,7 +122,7 @@
                     <img src="/triangle.svg" alt="A&T Logo" id="welcomeLogo">
                 </div>
             </div>
-            <p class="hero-desc">
+            <p class="hero-desc" id="homeDesc">
                 A&amp;T Technical Services is a design-led company creating exhibitions,
                 events, interiors, branding, and custom-built environments — from concept
                 to final installation, all under one roof.
@@ -138,7 +138,7 @@
                     <img src="https://i.pravatar.cc/80?img=27" alt="" loading="lazy">
                     <span class="stat-plus">+</span>
                 </div>
-                <p><strong>500+</strong> satisfied clients worldwide</p>
+                <p><strong id="homeClientStat">500+</strong> <span id="homeClientText">satisfied clients worldwide</span></p>
             </div>
             <a href="#quote" class="btn-pill btn-white btn-lg">
                 Get a Quote <i class="fa-solid fa-arrow-right"></i>
@@ -339,19 +339,19 @@
     <section class="highlights" id="highlights">
         <div class="wrap">
 
-            <div class="hl-block" data-reveal>
+            <div class="hl-block" data-reveal id="hlBlock0">
                 <div class="hl-media">
-                    <img src="https://images.unsplash.com/photo-1504917595217-d4bf141d24c0?w=1200&q=80" alt="Design-led production" loading="lazy">
+                    <img id="hlImg0" src="https://images.unsplash.com/photo-1504917595217-d4bf141d24c0?w=1200&q=80" alt="Design-led production" loading="lazy">
                     <div class="hl-media-badge glass-card">
                         <i class="fa-solid fa-pen-ruler"></i>
                         <span>Design-Led</span>
                     </div>
                 </div>
                 <div class="hl-body">
-                    <div class="sec-label"><span></span> Our Approach</div>
-                    <h2>One Vision.<br>From Concept<br>to Completion.</h2>
-                    <p>We combine creative direction, structural engineering, and in-house manufacturing under a single roof. The original idea is never diluted — from visualization to final installation, every stage is controlled by us.</p>
-                    <ul class="hl-points">
+                    <div class="sec-label"><span></span> <span id="hlLabel0">Our Approach</span></div>
+                    <h2 id="hlTitle0">One Vision.<br>From Concept<br>to Completion.</h2>
+                    <p id="hlDesc0">We combine creative direction, structural engineering, and in-house manufacturing under a single roof. The original idea is never diluted — from visualization to final installation, every stage is controlled by us.</p>
+                    <ul class="hl-points" id="hlPoints0">
                         <li><i class="fa-solid fa-check"></i> 2D &amp; 3D design &amp; visualization</li>
                         <li><i class="fa-solid fa-check"></i> In-house carpentry, steel &amp; acrylic</li>
                         <li><i class="fa-solid fa-check"></i> Large-format print center</li>
@@ -361,19 +361,19 @@
                 </div>
             </div>
 
-            <div class="hl-block hl-block--flip" data-reveal data-delay="120">
+            <div class="hl-block hl-block--flip" data-reveal data-delay="120" id="hlBlock1">
                 <div class="hl-media">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80" alt="Fully integrated operations" loading="lazy">
+                    <img id="hlImg1" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80" alt="Fully integrated operations" loading="lazy">
                     <div class="hl-media-badge glass-card">
                         <i class="fa-solid fa-gears"></i>
                         <span>Integrated</span>
                     </div>
                 </div>
                 <div class="hl-body">
-                    <div class="sec-label"><span></span> Our Advantage</div>
-                    <h2>One Partner.<br>Zero Fragmentation.<br>Pure Results.</h2>
-                    <p>Most clients juggle designers, fabricators, printers, and installers separately. A&amp;T brings every layer together, creating stronger alignment between idea and outcome — faster, cheaper, and more precise.</p>
-                    <ul class="hl-points">
+                    <div class="sec-label"><span></span> <span id="hlLabel1">Our Advantage</span></div>
+                    <h2 id="hlTitle1">One Partner.<br>Zero Fragmentation.<br>Pure Results.</h2>
+                    <p id="hlDesc1">Most clients juggle designers, fabricators, printers, and installers separately. A&amp;T brings every layer together, creating stronger alignment between idea and outcome — faster, cheaper, and more precise.</p>
+                    <ul class="hl-points" id="hlPoints1">
                         <li><i class="fa-solid fa-check"></i> All services under one contract</li>
                         <li><i class="fa-solid fa-check"></i> Faster turnaround &amp; clearer comms</li>
                         <li><i class="fa-solid fa-check"></i> Dubai standards, global delivery</li>
@@ -394,7 +394,7 @@
             <p class="sec-subtitle">Step behind the scenes and see exactly how we design, produce, and execute world-class environments across Dubai.</p>
             
             <div class="yt-video-container glass-card" style="margin-top: 3rem; padding: 1rem; border-radius: 20px;">
-                <iframe style="width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; border: none; display: block;" 
+                <iframe id="homeYoutube" style="width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; border: none; display: block;" 
                     src="https://www.youtube.com/embed/dNDQ8dJGdXQ?rel=0" 
                     title="YouTube video player" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -481,7 +481,7 @@
                     <div class="sec-label"><span></span> Get in Touch</div>
                     <h2>Let's Build<br>Your Vision.</h2>
                     <p>Tell us about your project and we'll get back to you within 24 hours.</p>
-                    <div class="quote-stats">
+                    <div class="quote-stats" id="quoteStatsContainer">
                         <div class="q-stat">
                             <strong>500+</strong>
                             <span>Satisfied Clients</span>
@@ -639,6 +639,58 @@
 
     <script src="index-portfolio.js"></script>
     <script src="script.js"></script>
+    <script>
+        (async function() {
+            try {
+                const resp = await fetch('data.json');
+                const data = await resp.json();
+                
+                // Hero Section
+                if (data.hero) {
+                    if (data.hero.title) document.getElementById('welcomeText').innerHTML = data.hero.title;
+                    if (data.hero.side_text) document.getElementById('homeSideText').innerText = data.hero.side_text;
+                    if (data.hero.badge_text) document.getElementById('homeBadgeText').innerText = data.hero.badge_text;
+                    if (data.hero.description) document.getElementById('homeDesc').innerText = data.hero.description;
+                    if (data.hero.clients_stat) document.getElementById('homeClientStat').innerText = data.hero.clients_stat;
+                    if (data.hero.clients_text) document.getElementById('homeClientText').innerText = data.hero.clients_text;
+                }
+                
+                // Highlights
+                if (data.highlights && data.highlights.length > 0) {
+                    for (let i = 0; i < 2; i++) {
+                        if (data.highlights[i]) {
+                            const hl = data.highlights[i];
+                            if (hl.img) document.getElementById('hlImg' + i).src = hl.img;
+                            if (hl.label) document.getElementById('hlLabel' + i).innerText = hl.label;
+                            if (hl.title) document.getElementById('hlTitle' + i).innerHTML = hl.title;
+                            if (hl.description) document.getElementById('hlDesc' + i).innerText = hl.description;
+                            if (hl.points) {
+                                document.getElementById('hlPoints' + i).innerHTML = hl.points.map(p => `<li><i class="fa-solid fa-check"></i> ${p}</li>`).join('');
+                            }
+                        }
+                    }
+                }
+
+                // YouTube
+                if (data.youtube && data.youtube.url) {
+                    document.getElementById('homeYoutube').src = data.youtube.url;
+                }
+
+                // Quote form stats
+                if (data.quote_stats) {
+                    const statsContainer = document.getElementById('quoteStatsContainer');
+                    if (statsContainer) {
+                        statsContainer.innerHTML = data.quote_stats.map(st => `
+                            <div class="q-stat">
+                                <strong>${st.number}</strong>
+                                <span>${st.label}</span>
+                            </div>
+                        `).join('');
+                    }
+                }
+            } catch(e) { }
+        })();
+    </script>
     <script>
         if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {

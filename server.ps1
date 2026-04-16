@@ -1,4 +1,4 @@
-$root = 'C:\Users\ahmed\.gemini\antigravity\scratch\AandT-Technical'
+$root = $PSScriptRoot
 $listener = [System.Net.HttpListener]::new()
 $listener.Prefixes.Add('http://localhost:3000/')
 $listener.Start()

@@ -18,8 +18,8 @@
     // Initialization: Fetch dynamic data
     async function initRentals() {
         try {
-            const resp = await fetch('data/rentals.json');
-            if (!resp.ok) throw new Error('Failed to fetch data/rentals.json');
+            const resp = await fetch('rentals.json');
+            if (!resp.ok) throw new Error('Failed to fetch rentals.json');
             PRODUCTS = await resp.json();
 
             // Initialize quantities for each product
