@@ -17,7 +17,7 @@ collections:
     files:
       - name: "general"
         label: "General Info & Links"
-        file: "data/settings.json"
+        file: "settings.json"
         fields:
           - { label: "Site Title", name: "site_title", widget: "string" }
           - { label: "Phone Number", name: "phone", widget: "string" }
@@ -114,7 +114,7 @@ collections:
     files:
       - name: "catalog"
         label: "Rentals Catalog"
-        file: "data/rentals.json"
+        file: "rentals.json"
         fields:
           - label: "Product List"
             name: "products"
