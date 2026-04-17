@@ -1,7 +1,8 @@
 {
+  "version": 2,
   "cleanUrls": true,
-  "rewrites": [
-    { "source": "/admin", "destination": "/admin/cms.html" },
-    { "source": "/admin/", "destination": "/admin/cms.html" }
-  ]
+  "framework": null,
+  "installCommand": "echo 'No install needed'",
+  "buildCommand": "echo 'No build needed'",
+  "outputDirectory": "."
 }
