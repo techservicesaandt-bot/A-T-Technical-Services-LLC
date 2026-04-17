@@ -241,12 +241,12 @@
             const btn = document.getElementById('submitBtn');
             const orig = btn.innerHTML;
 
-            // Get Formspree ID from data.json or settings
+            // Get Formspree ID from Sanity siteSettings
             let formspreeId = "mldgjzda"; 
             try {
-                const sResp = await fetch('data.json');
-                const sData = await sResp.json();
-                if (sData.formspree_id) formspreeId = sData.formspree_id;
+                const settingsArray = await fetchSanity('*[_type == "siteSettings"]');
+                const settings = settingsArray && settingsArray.length > 0 ? settingsArray[0] : {};
+                if (settings.formspreeId) formspreeId = settings.formspreeId;
             } catch(e) {}
 
             btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
@@ -302,9 +302,9 @@
     // ============================================================
     async function initGlobalSettings() {
         try {
-            const resp = await fetch('/settings.json');
-            if (!resp.ok) return;
-            const settings = await resp.json();
+            const settingsArray = await fetchSanity('*[_type == "siteSettings"]');
+            const settings = settingsArray && settingsArray.length > 0 ? settingsArray[0] : null;
+            if (!settings) return;
 
             // Phone
             if (settings.phone) {
@@ -323,8 +323,8 @@
             if (settings.location) {
                 document.querySelectorAll('.cms-location').forEach(el => el.textContent = settings.location);
             }
-            if (settings.google_maps_link) {
-                document.querySelectorAll('.cms-location-link').forEach(el => el.href = settings.google_maps_link);
+            if (settings.googleMapsLink) {
+                document.querySelectorAll('.cms-location-link').forEach(el => el.href = settings.googleMapsLink);
             }
 
             // Portfolio

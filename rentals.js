@@ -18,9 +18,17 @@
     // Initialization: Fetch dynamic data
     async function initRentals() {
         try {
-            const resp = await fetch(`rentals.json?t=${new Date().getTime()}`);
-            if (!resp.ok) throw new Error('Failed to fetch rentals.json');
-            PRODUCTS = await resp.json();
+            const sanityRentals = await fetchSanity('*[_type == "rental"]');
+            if (!sanityRentals) throw new Error('Failed to fetch from Sanity');
+            PRODUCTS = sanityRentals.map(r => ({
+                id: r._id,
+                name: r.name,
+                category: r.category,
+                img: buildSanityImageUrl(r.image),
+                tags: [],
+                availability: 'available',
+                description: r.description
+            }));
 
             // Initialize quantities for each product
             PRODUCTS.forEach(p => { if (!quantities[p.id]) quantities[p.id] = 1; });

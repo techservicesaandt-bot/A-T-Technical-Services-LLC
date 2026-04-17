@@ -177,9 +177,7 @@
                     const grid = document.getElementById('teamGrid');
                     if (!grid) return;
                     try {
-                        const resp = await fetch('data.json');
-                        const data = await resp.json();
-                        const team = data.team || [];
+                        const team = await fetchSanity('*[_type == "teamMember"]');
                         
                         team.forEach((m, i) => {
                             const card = document.createElement('div');
@@ -189,7 +187,7 @@
                             card.innerHTML = `
                                 <div class="team-img-wrap">
                                     <i class="fa-solid fa-quote-left team-quote-lg"></i>
-                                    <img src="${m.img}" alt="${m.name}" loading="lazy">
+                                    <img src="${buildSanityImageUrl(m.image)}" alt="${m.name}" loading="lazy">
                                 </div>
                                 <div class="team-info">
                                     <h3>${m.name}</h3>
@@ -261,6 +259,7 @@
         </div>
     </footer>
 
+    <script src="sanityClient.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

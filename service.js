@@ -5,13 +5,36 @@
 (async function () {
     'use strict';
 
-    let AT_SERVICES;
+    // Static metadata for service categories
+    const AT_SERVICES = {
+       events: { title: 'Events', tagline: 'Large Scale Events', description: 'End-to-end event production and execution.' },
+       exhibitions: { title: 'Exhibitions', tagline: 'Award-Winning Exhibitions', description: 'Immersive and engaging exhibition stands.' },
+       fitout: { title: 'Fitout', tagline: 'Premium Fitout Solutions', description: 'World-class interior fit-out for commercial spaces.' },
+       signages: { title: 'Signages and Large Format Printing', tagline: 'Digital Signages & Print', description: 'High-quality signage printing and installation.' },
+       branding: { title: 'Branding', tagline: 'Brand Experiences', description: 'Brand realization and physical activations.' },
+       manufacturing: { title: 'Manufacture', tagline: 'Bespoke Manufacturing', description: 'In-house production facility for custom builds.' }
+    };
+
+    const params  = new URLSearchParams(window.location.search);
+    const svcKey  = (params.get('service') || 'events').toLowerCase();
+    const svcData = AT_SERVICES[svcKey];
+
+    if (!svcData) { window.location.href = 'index.html'; return; }
+
     try {
-        const response = await fetch('data.json');
-        AT_SERVICES = await response.json();
+        const sanityProjects = await fetchSanity(`*[_type == "project" && serviceCategory == "${svcKey}"]`);
+        svcData.projects = (sanityProjects || []).map(p => ({
+            title: p.title,
+            category: p.serviceCategory,
+            year: p.year,
+            location: p.location,
+            description: p.description && p.description[0] ? p.description[0].children[0].text : '',
+            thumbnail: buildSanityImageUrl(p.thumbnail),
+            gallery: p.gallery ? p.gallery.map(g => buildSanityImageUrl(g)) : []
+        }));
     } catch (err) {
-        console.error("Failed to load project data", err);
-        return;
+        console.error("Failed to load project data from Sanity", err);
+        svcData.projects = [];
     }
 
     // ---- Background images per service (used in hero) ----
@@ -24,14 +47,6 @@
         manufacturing: 'https://images.unsplash.com/photo-1504917595217-d4bf141d24c0?w=1800&q=80',
         rentals:       'https://images.unsplash.com/photo-1505693314120-0d443867891c?w=1800&q=80'
     };
-
-    // ---- Get service key from URL query param ----
-    const params  = new URLSearchParams(window.location.search);
-    const svcKey  = (params.get('service') || 'events').toLowerCase();
-    const svcData = AT_SERVICES[svcKey];
-
-    // If invalid service, redirect home
-    if (!svcData) { window.location.href = 'index.html'; return; }
 
     // ---- Populate page meta ----
     document.getElementById('pageTitle').textContent = `A&T — ${svcData.title}`;

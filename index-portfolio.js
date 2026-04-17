@@ -1,25 +1,18 @@
 (async function () {
     'use strict';
     
-    // Fetch data.json to populate the portfolio cards
-    let AT_SERVICES;
+    // Fetch data from Sanity to populate the portfolio cards
+    let featuredProjects = [];
     try {
-        const response = await fetch('data.json');
-        AT_SERVICES = await response.json();
+        // Fetch 6 recent projects across all categories
+        const sanityProjects = await fetchSanity('*[_type == "project"] | order(_createdAt desc) [0...6]');
+        if (sanityProjects && sanityProjects.length > 0) {
+            featuredProjects = sanityProjects;
+        }
     } catch (e) {
-        console.error("Failed to fetch data.json", e);
+        console.error("Failed to fetch featured projects from Sanity", e);
         return;
     }
-
-    // Pick 6 featured projects to display in the Portfolio gallery runner
-    const featuredProjects = [];
-    const targetServices = ['events', 'fitout', 'exhibitions', 'branding', 'manufacturing', 'signages'];
-    
-    targetServices.forEach(s => {
-        if(AT_SERVICES[s] && AT_SERVICES[s].projects.length > 0) {
-            featuredProjects.push(AT_SERVICES[s].projects[0]);
-        }
-    });
 
     const galleryTrack = document.getElementById('galleryTrack');
     if (galleryTrack && featuredProjects.length > 0) {
@@ -32,7 +25,7 @@
             card.dataset.index = index;
             
             card.innerHTML = `
-                <img src="${proj.thumbnail}" alt="${proj.title}" loading="lazy">
+                <img src="${buildSanityImageUrl(proj.thumbnail)}" alt="${proj.title}" loading="lazy">
                 <div class="g-label"><span>${proj.title}</span><i class="fa-solid fa-magnifying-glass-plus"></i></div>
             `;
             
@@ -84,8 +77,9 @@
     function renderSlide(projIndex, galIndex) {
         const proj = featuredProjects[projIndex];
         const gallery = proj.gallery || [];
-        const totalPhotos = gallery.length;
-        const currentImgSrc = gallery[galIndex] || proj.thumbnail;
+        const totalPhotos = gallery.length > 0 ? gallery.length : 1;
+        const currentImgObj = gallery[galIndex] || proj.thumbnail;
+        const currentImgSrc = buildSanityImageUrl(currentImgObj);
 
         lbLoading.classList.remove('hidden');
         lbImage.classList.add('loading');
@@ -100,11 +94,11 @@
         };
         img.onerror = () => lbLoading.classList.add('hidden');
 
-        lbCat.textContent   = proj.category;
+        lbCat.textContent   = (proj.serviceCategory || '').toUpperCase();
         lbTitle.textContent = proj.title;
         lbYear.innerHTML    = `<i class="fa-regular fa-calendar"></i> ${proj.year}`;
         lbLoc.innerHTML     = `<i class="fa-solid fa-location-dot"></i> ${proj.location}`;
-        lbDesc.textContent  = proj.description;
+        lbDesc.textContent  = proj.description && proj.description[0] ? proj.description[0].children[0].text : '';
         lbCounter.textContent = `${galIndex + 1} of ${totalPhotos}`;
 
         lbPrev.disabled = galIndex === 0;

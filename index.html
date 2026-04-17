@@ -424,9 +424,7 @@
                     const grid = document.getElementById('teamHomeGrid');
                     if (!grid) return;
                     try {
-                        const resp = await fetch('data.json?t=' + new Date().getTime());
-                        const data = await resp.json();
-                        const team = data.team || [];
+                        const team = await fetchSanity('*[_type == "teamMember"][0...6]');
                         
                         team.forEach((m, i) => {
                             const card = document.createElement('div');
@@ -436,7 +434,7 @@
                             card.innerHTML = `
                                 <div class="team-img-wrap">
                                     <i class="fa-solid fa-quote-left team-quote-lg"></i>
-                                    <img src="${m.img}" alt="${m.name}" loading="lazy">
+                                    <img src="${buildSanityImageUrl(m.image)}" alt="${m.name}" loading="lazy">
                                 </div>
                                 <div class="team-info">
                                     <h3>${m.name}</h3>
@@ -534,9 +532,9 @@
                 <script>
                     (async function() {
                         try {
-                            const resp = await fetch('data.json?t=' + new Date().getTime());
-                            const data = await resp.json();
-                            const p = data.placeholders || {};
+                            const settingsArray = await fetchSanity('*[_type == "siteSettings"]');
+                            const settings = settingsArray && settingsArray.length > 0 ? settingsArray[0] : {};
+                            const p = settings.placeholders || {};
                             if (p.contact_name) {
                                 document.getElementById('lbl_contact_name').textContent = p.contact_name;
                                 document.getElementById('name').placeholder = p.contact_name;
@@ -637,13 +635,15 @@
         </div>
     </footer>
 
+    <script src="sanityClient.js"></script>
     <script src="index-portfolio.js"></script>
     <script src="script.js"></script>
     <script>
         (async function() {
             try {
-                const resp = await fetch('data.json?t=' + new Date().getTime());
-                const data = await resp.json();
+                // Fetch homepage document from Sanity
+                const dataArray = await fetchSanity('*[_type == "homepage"]');
+                const data = dataArray && dataArray.length > 0 ? dataArray[0] : null;
                 
                 // Hero Section
                 if (data.hero) {
@@ -656,11 +656,11 @@
                 }
                 
                 // Highlights
-                if (data.highlights && data.highlights.length > 0) {
+                if (data && data.highlights && data.highlights.length > 0) {
                     for (let i = 0; i < 2; i++) {
                         if (data.highlights[i]) {
                             const hl = data.highlights[i];
-                            if (hl.img) document.getElementById('hlImg' + i).src = hl.img;
+                            if (hl.image) document.getElementById('hlImg' + i).src = buildSanityImageUrl(hl.image);
                             if (hl.label) document.getElementById('hlLabel' + i).innerText = hl.label;
                             if (hl.title) document.getElementById('hlTitle' + i).innerHTML = hl.title;
                             if (hl.description) document.getElementById('hlDesc' + i).innerText = hl.description;
